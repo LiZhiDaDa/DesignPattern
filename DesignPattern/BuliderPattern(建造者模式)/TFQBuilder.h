@@ -14,5 +14,6 @@
 - (void)build2;
 - (void)build3;
 - (void)build4;
+- (void)beginBuild;
 
 @end

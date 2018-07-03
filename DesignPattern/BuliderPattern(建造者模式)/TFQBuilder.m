@@ -22,6 +22,11 @@
 - (void)build4{
     NSLog(@"没有实现方法build4");
 }
-
+- (void)beginBuild{
+    [self build1];
+    [self build2];
+    [self build3];
+    [self build4];
+}
 
 @end

@@ -18,6 +18,8 @@
 #import "TFQTestPaperA.h"
 #import "TFQTestPaperB.h"
 #import "TFQFund.h"
+#import "TFQBuilderA.h"
+#import "TFQBuilderB.h"
 
 @interface ViewController ()
 
@@ -25,7 +27,7 @@
 
 @end
 
-#warning - 按照大话设计模式书序，从下往上观看
+// 按照大话设计模式书序，在touchebegan中看即可。也可以从文件底部依次向上看
 
 @implementation ViewController
 
@@ -46,6 +48,7 @@
 //    [self prototypePattern];//原型模式
 //    [self templateMethodPattern];//模板方法模式
 //    [self appearancePattern];//外观模式
+    [self builderPattern];//建造者模式
 }
 
 #pragma mark - 建造者模式
@@ -57,11 +60,16 @@
  *  但是iOS里边没有抽象类怎么实现呢？那就只能在父类方法实现体里边写输出语句或者alert语句，酱紫少实现方法就会提示你，
  *  但是这个方法只能再运行的时候提示你，没办法，谁让iOS没有抽象类的概念呢。
  *  里边有一个指挥者类，用它来控制建造过程，也用他来隔离用户与建造过程的关联，个人感觉没什么卵用
+ *  其实父类里边的这个build方法就是相当于这个指挥者类的功能，本人感觉再写个指挥者类会代码冗余，就直接写到父类里了
  *
  *  下边开始画小人儿
  */
 - (void)builderPattern{
+    TFQBuilderA *buildA = [[TFQBuilderA alloc] init];
+    [buildA beginBuild];
     
+    TFQBuilderB *buildB = [[TFQBuilderB alloc] init];
+    [buildB beginBuild];
 }
 
 #pragma mark - 外观模式
