@@ -10,7 +10,7 @@
 
 @interface TFQNotification : NSObject
 
-@property (nonatomic, copy)NSMutableArray *notifications;
+@property (nonatomic, strong)NSMutableArray *notifications;
 - (void)sendNotification;
 
 @end
