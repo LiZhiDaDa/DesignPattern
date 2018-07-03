@@ -45,6 +45,9 @@
 		F7AC37AC20E623C6000DC470 /* TFQStudentFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AC37AB20E623C6000DC470 /* TFQStudentFactory.m */; };
 		F7AC37AF20E623DF000DC470 /* TFQVolunteerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AC37AE20E623DF000DC470 /* TFQVolunteerFactory.m */; };
 		F7AC37B620E635BE000DC470 /* TFQCopyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AC37B520E635BE000DC470 /* TFQCopyObject.m */; };
+		F7AC704120EB6D65003C5BD8 /* TFQObserver1.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AC704020EB6D65003C5BD8 /* TFQObserver1.m */; };
+		F7AC704420EB6D70003C5BD8 /* TFQObserver2.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AC704320EB6D70003C5BD8 /* TFQObserver2.m */; };
+		F7AC704720EB6E7C003C5BD8 /* TFQNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AC704620EB6E7C003C5BD8 /* TFQNotification.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +144,12 @@
 		F7AC37AE20E623DF000DC470 /* TFQVolunteerFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQVolunteerFactory.m; sourceTree = "<group>"; };
 		F7AC37B420E635BE000DC470 /* TFQCopyObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQCopyObject.h; sourceTree = "<group>"; };
 		F7AC37B520E635BE000DC470 /* TFQCopyObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQCopyObject.m; sourceTree = "<group>"; };
+		F7AC703F20EB6D65003C5BD8 /* TFQObserver1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQObserver1.h; sourceTree = "<group>"; };
+		F7AC704020EB6D65003C5BD8 /* TFQObserver1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQObserver1.m; sourceTree = "<group>"; };
+		F7AC704220EB6D70003C5BD8 /* TFQObserver2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQObserver2.h; sourceTree = "<group>"; };
+		F7AC704320EB6D70003C5BD8 /* TFQObserver2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQObserver2.m; sourceTree = "<group>"; };
+		F7AC704520EB6E7C003C5BD8 /* TFQNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQNotification.h; sourceTree = "<group>"; };
+		F7AC704620EB6E7C003C5BD8 /* TFQNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQNotification.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +227,7 @@
 		F73A501920AC33B8002F2599 /* DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				F7AC703E20EB6D1A003C5BD8 /* ObserverPattern(观察者模式) */,
 				F7766CBB20EA3BA200636752 /* BuliderPattern(建造者模式) */,
 				F7766CB020EA347600636752 /* AppearancePattern(外观模式) */,
 				F7766CA620EA115A00636752 /* TemplateMethodPattern(模板方法模式) */,
@@ -379,6 +389,19 @@
 			path = "PrototypePattern(原型模式)";
 			sourceTree = "<group>";
 		};
+		F7AC703E20EB6D1A003C5BD8 /* ObserverPattern(观察者模式) */ = {
+			isa = PBXGroup;
+			children = (
+				F7AC703F20EB6D65003C5BD8 /* TFQObserver1.h */,
+				F7AC704020EB6D65003C5BD8 /* TFQObserver1.m */,
+				F7AC704220EB6D70003C5BD8 /* TFQObserver2.h */,
+				F7AC704320EB6D70003C5BD8 /* TFQObserver2.m */,
+				F7AC704520EB6E7C003C5BD8 /* TFQNotification.h */,
+				F7AC704620EB6E7C003C5BD8 /* TFQNotification.m */,
+			);
+			path = "ObserverPattern(观察者模式)";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -521,6 +544,8 @@
 				F70E34D120E4C2E000E4F02B /* TFQOperation.m in Sources */,
 				F7766CAC20EA143100636752 /* TFQTestPaperA.m in Sources */,
 				F73A502A20AC33B8002F2599 /* main.m in Sources */,
+				F7AC704420EB6D70003C5BD8 /* TFQObserver2.m in Sources */,
+				F7AC704120EB6D65003C5BD8 /* TFQObserver1.m in Sources */,
 				F70E34DA20E4C9D200E4F02B /* TFQMultiply.m in Sources */,
 				F7A5860720E4E5E800371AD2 /* TFQHat.m in Sources */,
 				F70E34DD20E4C9EB00E4F02B /* TFQDivide.m in Sources */,
@@ -534,6 +559,7 @@
 				F7766CBE20EA3BD800636752 /* TFQBuilder.m in Sources */,
 				F73A501C20AC33B8002F2599 /* AppDelegate.m in Sources */,
 				F7AC379720E5E518000DC470 /* TFQGirlC.m in Sources */,
+				F7AC704720EB6E7C003C5BD8 /* TFQNotification.m in Sources */,
 				F7766CA920EA141000636752 /* TFQSuperTestPaper.m in Sources */,
 				F7766CBA20EA352600636752 /* TFQSecondFund.m in Sources */,
 				F7AC37A120E622DE000DC470 /* TFQStudent.m in Sources */,

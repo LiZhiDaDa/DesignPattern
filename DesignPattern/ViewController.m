@@ -20,6 +20,9 @@
 #import "TFQFund.h"
 #import "TFQBuilderA.h"
 #import "TFQBuilderB.h"
+#import "TFQObserver1.h"
+#import "TFQObserver2.h"
+#import "TFQNotification.h"
 
 @interface ViewController ()
 
@@ -48,7 +51,8 @@
 //    [self prototypePattern];//原型模式
 //    [self templateMethodPattern];//模板方法模式
 //    [self appearancePattern];//外观模式
-    [self builderPattern];//建造者模式
+//    [self builderPattern];//建造者模式
+    [self oberverPattern];//观察者模式
 }
 
 #pragma mark - 观察者模式
@@ -58,12 +62,29 @@
  *
  *  java 中有一个委托事件 public event EventHandler update; ios 里边没有，这里用通知实现。
  *  但是用通知实现起来没什么意思，天天写通知，都快写烂了，但是那又有什么办法呢。
- *
- *
- *
- *
- *  下边开始画小人儿
+ *  iOS用通知强硬的实现观察者模式，哈哈哈，其实更形象的观察者模式是kvo，
  */
+- (void)oberverPattern{
+    TFQNotification *notification = [[TFQNotification alloc] init];
+    TFQObserver1 *observer1 = [[TFQObserver1 alloc] init];
+    TFQObserver2 *observer2 = [[TFQObserver2 alloc] init];
+    //监听通知
+    [[NSNotificationCenter defaultCenter] addObserver:observer1 selector:@selector(receiveNotifacation) name:@"1" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:observer2 selector:@selector(receive) name:@"2" object:nil];
+    
+    //创建通知
+    NSNotification *no1 = [[NSNotification alloc] initWithName:@"1" object:nil userInfo:nil];
+    NSNotification *no2 = [[NSNotification alloc] initWithName:@"2" object:nil userInfo:nil];
+    [notification.notifications addObject:no1];
+    [notification.notifications addObject:no2];
+    
+    //发送通知
+    [notification sendNotification];
+    
+    //移除通知
+    [[NSNotificationCenter defaultCenter] removeObserver:observer1];
+    [[NSNotificationCenter defaultCenter] removeObserver:observer2];
+}
 
 #pragma mark - 建造者模式
 /**
