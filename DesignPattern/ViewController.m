@@ -52,8 +52,27 @@
 //    [self templateMethodPattern];//模板方法模式
 //    [self appearancePattern];//外观模式
 //    [self builderPattern];//建造者模式
-    [self oberverPattern];//观察者模式
+//    [self oberverPattern];//观察者模式
+    [self abstraceFactoryPattern];//抽象工厂模式
 }
+
+#pragma mark - 抽象工厂模式
+/**
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
+- (void)abstraceFactoryPattern{
+    
+}
+
+
 
 #pragma mark - 观察者模式
 /**
@@ -62,7 +81,7 @@
  *
  *  java 中有一个委托事件 public event EventHandler update; ios 里边没有，这里用通知实现。
  *  但是用通知实现起来没什么意思，天天写通知，都快写烂了，但是那又有什么办法呢。
- *  iOS用通知强硬的实现观察者模式，哈哈哈，其实更形象的观察者模式是kvo，
+ *  iOS用通知强硬的实现观察者模式，哈哈哈，其实更形象的观察者模式是kvo，大家可以研究一下，其实精髓就是建造子类重写了set方法。
  */
 - (void)oberverPattern{
     TFQNotification *notification = [[TFQNotification alloc] init];
