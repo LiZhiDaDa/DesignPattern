@@ -23,6 +23,13 @@
 #import "TFQObserver1.h"
 #import "TFQObserver2.h"
 #import "TFQNotification.h"
+#import "TFQDataBaseManager.h"
+#import "TFQWork.h"
+#import "TFQMorningState.h"
+#import "TFQTranslater.h"
+#import "TFQNBAKobe.h"
+#import "TFQGamePlayer.h"
+#import "TFQRecord.h"
 
 @interface ViewController ()
 
@@ -53,26 +60,112 @@
 //    [self appearancePattern];//外观模式
 //    [self builderPattern];//建造者模式
 //    [self oberverPattern];//观察者模式
-    [self abstraceFactoryPattern];//抽象工厂模式
+//    [self abstraceFactoryPattern];//抽象工厂模式
+//    [self statePattern];//状态模式
+//    [self adapterPattern];//适配器模式
+//    [self mementoPattern];//备忘录模式
+    [self combinatorialPattern];//组合模式
+}
+
+#pragma mark - 组合模式
+/**
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
+- (void)combinatorialPattern{
+    
+}
+
+#pragma mark - 备忘录模式
+/**
+ *  备忘录模式：在不破坏封装性的前提下，捕获一个对象的内部状态，并在该对象之外保存这个状态。
+ *  这样以后就可将该对象恢复到原先保存的状态。
+ *
+ *  我只能说，鸡肋，哈哈哈，就是用第三方类保存了对应的属性而已。
+ *  写个例子，打游戏保存血量跟蓝量
+ *  其实这些个涉及模式中，每个设计模式都有管理者类，写法更加严谨，但是我就是不想写管理者类。
+ */
+- (void)mementoPattern{
+    TFQGamePlayer *player = [[TFQGamePlayer alloc] init];
+    player.blood = @"100";
+    player.chaKeLa = @"100";
+    TFQRecord *record = [[TFQRecord alloc] init];
+    [record saveWithPlayer:player];
+    NSLog(@"打仗前血量：%@ 查克拉：%@",player.blood,player.chaKeLa);
+    player.blood = @"90";
+    player.chaKeLa = @"90";
+    NSLog(@"打仗后血量：%@ 查克拉：%@",player.blood,player.chaKeLa);
+    [record resurrectionWithPlayer:player];
+    NSLog(@"恢复进度后血量：%@ 查克拉：%@",player.blood,player.chaKeLa);
+}
+
+#pragma mark - 适配器模式
+/**
+ *  适配器模式：将一个类的接口转换成客户希望的另外一个接口。适配器模式使得原本由于接口不兼容
+ *  而不能一起工作的那些类可以一起工作。
+ *
+ *  其实大家实际开发中肯定都用过适配器模式，我也用过，原来的老代码有一部分不敢动，但是又有新需求，
+ *  只好小小的适配一下，但是那时候用的时候，并不知道这是一个设计模式。
+ *
+ *  书中的例子说的是姚明刚去NBA工作，不懂英语，无法合理的理解战术，这时候就需要一个翻译来告诉
+ *  姚明需要做些什么，适配器的很好提现，通俗易懂。
+ */
+- (void)adapterPattern{
+    TFQNBAPlayer *kobe = [[TFQNBAKobe alloc] initWithName:@"kobe"];
+    [kobe attack];
+    TFQNBAPlayer *translater = [[TFQTranslater alloc] initWithName:@"yaoming"];
+    [translater defense];
+}
+
+#pragma mark - 状态模式
+/**
+ *  状态模式：当一个对象的内在状态改变时允许改变其行为，这个对象看起来像是改变了其类。
+ *
+ *  书中的例子是小菜加班，上午精神饱满，中午吃饭午休，下午困，干完活就可以正点下班，
+ *  干不完活儿，就只能继续加班。这一天的各种状态是以时间判断的，这里边至少要写5、6个if else
+ *  语句，以后再做修改就会相当费劲，所以引入了状态模式。
+ *
+ *  状态模式的巨大优点就是隔离了变化，改了那个状态一目了然别的状态不用管，但是状态模式优点绕。需要
+ *  手动实现以下，哪怕是实现一个demo也好
+ */
+- (void)statePattern{
+    TFQWork *work = [[TFQWork alloc] init];
+    work.hour = 9;
+    [work writeCode];
+    work.hour= 13;
+    [work writeCode];
+    work.hour = 23;
+    [work writeCode];
 }
 
 #pragma mark - 抽象工厂模式
 /**
- *  抽象工厂模式：
+ *  抽象工厂模式：提供一个创建一系列相关或相互依赖对象的接口，而无需指定它们具体的类。
+ *  java里边的接口，iOS这里全部用继承来实现。
  *
  *  先来一波抽象工厂的文字解释，书中的例子就是数据库从sqlserver 切换到了 access数据库，导致大部分代码需要重写。
  *  那是怎么解决这个问题的呢？
  *  从源头上就开始写抽象工厂，然后实例化sqlserver、access两个子类，这样子前期工作量大一点，但是后期切换起来方便。
  *  但是这个东西，我只能大体的跟大家演练一下，说到底我感觉这也是个鸡肋的设计模式。
  *
- *  java里边用到了反射，iOS里边怎么解决这个棘手的问题呢。雪薇有点尴尬。
- *
+ *  java里边用到了反射，iOS里边怎么解决这个棘手的问题呢。雪薇有点尴尬。 难道要用NSClassFromString?
  */
 - (void)abstraceFactoryPattern{
-    
+    //如果想用数据库,只需要修改这里的属性值就可以了
+    TFQDataBaseManager.databaseName = @"sqlserver";
+    //TFQDataBaseManager.databaseName = @"oracle";
+    TFQDataBase *database = [TFQDataBaseManager getDataBase];
+    [database connectDB];
+    TFQCRUD *crud = [TFQDataBaseManager getCRUD];
+    [crud crud];
 }
-
-
 
 #pragma mark - 观察者模式
 /**

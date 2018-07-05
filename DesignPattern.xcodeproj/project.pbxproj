@@ -20,6 +20,14 @@
 		F73A502A20AC33B8002F2599 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F73A502920AC33B8002F2599 /* main.m */; };
 		F73A503420AC33B9002F2599 /* DesignPatternTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F73A503320AC33B9002F2599 /* DesignPatternTests.m */; };
 		F73A503F20AC33B9002F2599 /* DesignPatternUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F73A503E20AC33B9002F2599 /* DesignPatternUITests.m */; };
+		F76953CC20EC619C0087EDE5 /* TFQObserver1.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AC704020EB6D65003C5BD8 /* TFQObserver1.m */; };
+		F76953CF20EC654E0087EDE5 /* TFQDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = F76953CE20EC654E0087EDE5 /* TFQDataBase.m */; };
+		F76953D220EC65600087EDE5 /* TFQSqlServer.m in Sources */ = {isa = PBXBuildFile; fileRef = F76953D120EC65600087EDE5 /* TFQSqlServer.m */; };
+		F76953D520EC65770087EDE5 /* TFQOracle.m in Sources */ = {isa = PBXBuildFile; fileRef = F76953D420EC65770087EDE5 /* TFQOracle.m */; };
+		F76953D820EC65E80087EDE5 /* TFQCRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F76953D720EC65E80087EDE5 /* TFQCRUD.m */; };
+		F76953DB20EC66020087EDE5 /* TFQCRUDSqlServer.m in Sources */ = {isa = PBXBuildFile; fileRef = F76953DA20EC66020087EDE5 /* TFQCRUDSqlServer.m */; };
+		F76953DE20EC660F0087EDE5 /* TFQCRUDOracle.m in Sources */ = {isa = PBXBuildFile; fileRef = F76953DD20EC660F0087EDE5 /* TFQCRUDOracle.m */; };
+		F76953E120EC6B200087EDE5 /* TFQDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F76953E020EC6B200087EDE5 /* TFQDataBaseManager.m */; };
 		F7766CA920EA141000636752 /* TFQSuperTestPaper.m in Sources */ = {isa = PBXBuildFile; fileRef = F7766CA820EA141000636752 /* TFQSuperTestPaper.m */; };
 		F7766CAC20EA143100636752 /* TFQTestPaperA.m in Sources */ = {isa = PBXBuildFile; fileRef = F7766CAB20EA143100636752 /* TFQTestPaperA.m */; };
 		F7766CAF20EA143F00636752 /* TFQTestPaperB.m in Sources */ = {isa = PBXBuildFile; fileRef = F7766CAE20EA143F00636752 /* TFQTestPaperB.m */; };
@@ -27,10 +35,23 @@
 		F7766CB620EA351200636752 /* TFQFirstFund.m in Sources */ = {isa = PBXBuildFile; fileRef = F7766CB520EA351200636752 /* TFQFirstFund.m */; };
 		F7766CBA20EA352600636752 /* TFQSecondFund.m in Sources */ = {isa = PBXBuildFile; fileRef = F7766CB920EA352600636752 /* TFQSecondFund.m */; };
 		F7766CBE20EA3BD800636752 /* TFQBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = F7766CBD20EA3BD800636752 /* TFQBuilder.m */; };
+		F786594020ECB524000817BE /* TFQState.m in Sources */ = {isa = PBXBuildFile; fileRef = F786593F20ECB524000817BE /* TFQState.m */; };
+		F786594320ECB565000817BE /* TFQMorningState.m in Sources */ = {isa = PBXBuildFile; fileRef = F786594220ECB565000817BE /* TFQMorningState.m */; };
+		F786594620ECB5AA000817BE /* TFQNoonState.m in Sources */ = {isa = PBXBuildFile; fileRef = F786594520ECB5AA000817BE /* TFQNoonState.m */; };
+		F786594920ECB5C5000817BE /* TFQAfternoonState.m in Sources */ = {isa = PBXBuildFile; fileRef = F786594820ECB5C5000817BE /* TFQAfternoonState.m */; };
+		F786594C20ECB5D2000817BE /* TFQEveningState.m in Sources */ = {isa = PBXBuildFile; fileRef = F786594B20ECB5D2000817BE /* TFQEveningState.m */; };
+		F786594F20ECB5E0000817BE /* TFQSleepState.m in Sources */ = {isa = PBXBuildFile; fileRef = F786594E20ECB5E0000817BE /* TFQSleepState.m */; };
+		F786595220ECB6ED000817BE /* TFQWork.m in Sources */ = {isa = PBXBuildFile; fileRef = F786595120ECB6ED000817BE /* TFQWork.m */; };
 		F7A5860120E4E58D00371AD2 /* TFQDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A5860020E4E58D00371AD2 /* TFQDecorator.m */; };
 		F7A5860420E4E5B200371AD2 /* TFQPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A5860320E4E5B200371AD2 /* TFQPerson.m */; };
 		F7A5860720E4E5E800371AD2 /* TFQHat.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A5860620E4E5E800371AD2 /* TFQHat.m */; };
 		F7A5861020E4E62100371AD2 /* TFQShoes.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A5860F20E4E62100371AD2 /* TFQShoes.m */; };
+		F7A6F3CE20EDB83D00615A41 /* TFQNBAPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A6F3CD20EDB83D00615A41 /* TFQNBAPlayer.m */; };
+		F7A6F3D120EDB8C200615A41 /* TFQNBAKobe.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A6F3D020EDB8C200615A41 /* TFQNBAKobe.m */; };
+		F7A6F3D420EDBAA100615A41 /* TFQNBAYaoMing.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A6F3D320EDBAA100615A41 /* TFQNBAYaoMing.m */; };
+		F7A6F3D720EDBAB300615A41 /* TFQTranslater.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A6F3D620EDBAB300615A41 /* TFQTranslater.m */; };
+		F7A6F3DA20EDC0A500615A41 /* TFQGamePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A6F3D920EDC0A500615A41 /* TFQGamePlayer.m */; };
+		F7A6F3DD20EDC1E300615A41 /* TFQRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A6F3DC20EDC1E300615A41 /* TFQRecord.m */; };
 		F7A8C67B20EB1EDF006EB6A9 /* TFQStraTegy.m in Sources */ = {isa = PBXBuildFile; fileRef = F70E34E020E4D3B000E4F02B /* TFQStraTegy.m */; };
 		F7A8C67E20EB1FF9006EB6A9 /* TFQBuilderA.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A8C67D20EB1FF9006EB6A9 /* TFQBuilderA.m */; };
 		F7A8C68120EB200B006EB6A9 /* TFQBuilderB.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A8C68020EB200B006EB6A9 /* TFQBuilderB.m */; };
@@ -45,7 +66,6 @@
 		F7AC37AC20E623C6000DC470 /* TFQStudentFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AC37AB20E623C6000DC470 /* TFQStudentFactory.m */; };
 		F7AC37AF20E623DF000DC470 /* TFQVolunteerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AC37AE20E623DF000DC470 /* TFQVolunteerFactory.m */; };
 		F7AC37B620E635BE000DC470 /* TFQCopyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AC37B520E635BE000DC470 /* TFQCopyObject.m */; };
-		F7AC704120EB6D65003C5BD8 /* TFQObserver1.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AC704020EB6D65003C5BD8 /* TFQObserver1.m */; };
 		F7AC704420EB6D70003C5BD8 /* TFQObserver2.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AC704320EB6D70003C5BD8 /* TFQObserver2.m */; };
 		F7AC704720EB6E7C003C5BD8 /* TFQNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AC704620EB6E7C003C5BD8 /* TFQNotification.m */; };
 /* End PBXBuildFile section */
@@ -96,6 +116,20 @@
 		F73A503A20AC33B9002F2599 /* DesignPatternUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignPatternUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F73A503E20AC33B9002F2599 /* DesignPatternUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignPatternUITests.m; sourceTree = "<group>"; };
 		F73A504020AC33B9002F2599 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F76953CD20EC654E0087EDE5 /* TFQDataBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQDataBase.h; sourceTree = "<group>"; };
+		F76953CE20EC654E0087EDE5 /* TFQDataBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQDataBase.m; sourceTree = "<group>"; };
+		F76953D020EC65600087EDE5 /* TFQSqlServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQSqlServer.h; sourceTree = "<group>"; };
+		F76953D120EC65600087EDE5 /* TFQSqlServer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQSqlServer.m; sourceTree = "<group>"; };
+		F76953D320EC65770087EDE5 /* TFQOracle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQOracle.h; sourceTree = "<group>"; };
+		F76953D420EC65770087EDE5 /* TFQOracle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQOracle.m; sourceTree = "<group>"; };
+		F76953D620EC65E80087EDE5 /* TFQCRUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQCRUD.h; sourceTree = "<group>"; };
+		F76953D720EC65E80087EDE5 /* TFQCRUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQCRUD.m; sourceTree = "<group>"; };
+		F76953D920EC66020087EDE5 /* TFQCRUDSqlServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQCRUDSqlServer.h; sourceTree = "<group>"; };
+		F76953DA20EC66020087EDE5 /* TFQCRUDSqlServer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQCRUDSqlServer.m; sourceTree = "<group>"; };
+		F76953DC20EC660F0087EDE5 /* TFQCRUDOracle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQCRUDOracle.h; sourceTree = "<group>"; };
+		F76953DD20EC660F0087EDE5 /* TFQCRUDOracle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQCRUDOracle.m; sourceTree = "<group>"; };
+		F76953DF20EC6B200087EDE5 /* TFQDataBaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQDataBaseManager.h; sourceTree = "<group>"; };
+		F76953E020EC6B200087EDE5 /* TFQDataBaseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQDataBaseManager.m; sourceTree = "<group>"; };
 		F7766CA720EA141000636752 /* TFQSuperTestPaper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQSuperTestPaper.h; sourceTree = "<group>"; };
 		F7766CA820EA141000636752 /* TFQSuperTestPaper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQSuperTestPaper.m; sourceTree = "<group>"; };
 		F7766CAA20EA143100636752 /* TFQTestPaperA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQTestPaperA.h; sourceTree = "<group>"; };
@@ -110,6 +144,20 @@
 		F7766CB920EA352600636752 /* TFQSecondFund.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQSecondFund.m; sourceTree = "<group>"; };
 		F7766CBC20EA3BD800636752 /* TFQBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQBuilder.h; sourceTree = "<group>"; };
 		F7766CBD20EA3BD800636752 /* TFQBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQBuilder.m; sourceTree = "<group>"; };
+		F786593E20ECB524000817BE /* TFQState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQState.h; sourceTree = "<group>"; };
+		F786593F20ECB524000817BE /* TFQState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQState.m; sourceTree = "<group>"; };
+		F786594120ECB565000817BE /* TFQMorningState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQMorningState.h; sourceTree = "<group>"; };
+		F786594220ECB565000817BE /* TFQMorningState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQMorningState.m; sourceTree = "<group>"; };
+		F786594420ECB5AA000817BE /* TFQNoonState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQNoonState.h; sourceTree = "<group>"; };
+		F786594520ECB5AA000817BE /* TFQNoonState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQNoonState.m; sourceTree = "<group>"; };
+		F786594720ECB5C5000817BE /* TFQAfternoonState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQAfternoonState.h; sourceTree = "<group>"; };
+		F786594820ECB5C5000817BE /* TFQAfternoonState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQAfternoonState.m; sourceTree = "<group>"; };
+		F786594A20ECB5D2000817BE /* TFQEveningState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQEveningState.h; sourceTree = "<group>"; };
+		F786594B20ECB5D2000817BE /* TFQEveningState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQEveningState.m; sourceTree = "<group>"; };
+		F786594D20ECB5E0000817BE /* TFQSleepState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQSleepState.h; sourceTree = "<group>"; };
+		F786594E20ECB5E0000817BE /* TFQSleepState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQSleepState.m; sourceTree = "<group>"; };
+		F786595020ECB6ED000817BE /* TFQWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQWork.h; sourceTree = "<group>"; };
+		F786595120ECB6ED000817BE /* TFQWork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQWork.m; sourceTree = "<group>"; };
 		F7A585FF20E4E58D00371AD2 /* TFQDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQDecorator.h; sourceTree = "<group>"; };
 		F7A5860020E4E58D00371AD2 /* TFQDecorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQDecorator.m; sourceTree = "<group>"; };
 		F7A5860220E4E5B200371AD2 /* TFQPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQPerson.h; sourceTree = "<group>"; };
@@ -118,6 +166,18 @@
 		F7A5860620E4E5E800371AD2 /* TFQHat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQHat.m; sourceTree = "<group>"; };
 		F7A5860E20E4E62100371AD2 /* TFQShoes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQShoes.h; sourceTree = "<group>"; };
 		F7A5860F20E4E62100371AD2 /* TFQShoes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQShoes.m; sourceTree = "<group>"; };
+		F7A6F3CC20EDB83D00615A41 /* TFQNBAPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQNBAPlayer.h; sourceTree = "<group>"; };
+		F7A6F3CD20EDB83D00615A41 /* TFQNBAPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQNBAPlayer.m; sourceTree = "<group>"; };
+		F7A6F3CF20EDB8C200615A41 /* TFQNBAKobe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQNBAKobe.h; sourceTree = "<group>"; };
+		F7A6F3D020EDB8C200615A41 /* TFQNBAKobe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQNBAKobe.m; sourceTree = "<group>"; };
+		F7A6F3D220EDBAA100615A41 /* TFQNBAYaoMing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQNBAYaoMing.h; sourceTree = "<group>"; };
+		F7A6F3D320EDBAA100615A41 /* TFQNBAYaoMing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQNBAYaoMing.m; sourceTree = "<group>"; };
+		F7A6F3D520EDBAB300615A41 /* TFQTranslater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQTranslater.h; sourceTree = "<group>"; };
+		F7A6F3D620EDBAB300615A41 /* TFQTranslater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQTranslater.m; sourceTree = "<group>"; };
+		F7A6F3D820EDC0A500615A41 /* TFQGamePlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQGamePlayer.h; sourceTree = "<group>"; };
+		F7A6F3D920EDC0A500615A41 /* TFQGamePlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQGamePlayer.m; sourceTree = "<group>"; };
+		F7A6F3DB20EDC1E300615A41 /* TFQRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQRecord.h; sourceTree = "<group>"; };
+		F7A6F3DC20EDC1E300615A41 /* TFQRecord.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQRecord.m; sourceTree = "<group>"; };
 		F7A8C67C20EB1FF9006EB6A9 /* TFQBuilderA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQBuilderA.h; sourceTree = "<group>"; };
 		F7A8C67D20EB1FF9006EB6A9 /* TFQBuilderA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQBuilderA.m; sourceTree = "<group>"; };
 		F7A8C67F20EB200B006EB6A9 /* TFQBuilderB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQBuilderB.h; sourceTree = "<group>"; };
@@ -227,6 +287,11 @@
 		F73A501920AC33B8002F2599 /* DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				F7A6F3DE20EDC58600615A41 /* CombinatorialPattern(组合模式) */,
+				F786595420ECD7EF000817BE /* MementoPattern(备忘录模式) */,
+				F786595320ECCDF1000817BE /* AdapterPattern(适配器模式) */,
+				F76953E220EC7D2F0087EDE5 /* StatePattern(状态模式) */,
+				F7AC704820EB850D003C5BD8 /* AbstraceFactoryPattern(抽象工厂模式) */,
 				F7AC703E20EB6D1A003C5BD8 /* ObserverPattern(观察者模式) */,
 				F7766CBB20EA3BA200636752 /* BuliderPattern(建造者模式) */,
 				F7766CB020EA347600636752 /* AppearancePattern(外观模式) */,
@@ -276,6 +341,27 @@
 			path = "FactoryPattern(工厂模式)";
 			sourceTree = "<group>";
 		};
+		F76953E220EC7D2F0087EDE5 /* StatePattern(状态模式) */ = {
+			isa = PBXGroup;
+			children = (
+				F786593E20ECB524000817BE /* TFQState.h */,
+				F786593F20ECB524000817BE /* TFQState.m */,
+				F786594120ECB565000817BE /* TFQMorningState.h */,
+				F786594220ECB565000817BE /* TFQMorningState.m */,
+				F786594420ECB5AA000817BE /* TFQNoonState.h */,
+				F786594520ECB5AA000817BE /* TFQNoonState.m */,
+				F786594720ECB5C5000817BE /* TFQAfternoonState.h */,
+				F786594820ECB5C5000817BE /* TFQAfternoonState.m */,
+				F786594A20ECB5D2000817BE /* TFQEveningState.h */,
+				F786594B20ECB5D2000817BE /* TFQEveningState.m */,
+				F786594D20ECB5E0000817BE /* TFQSleepState.h */,
+				F786594E20ECB5E0000817BE /* TFQSleepState.m */,
+				F786595020ECB6ED000817BE /* TFQWork.h */,
+				F786595120ECB6ED000817BE /* TFQWork.m */,
+			);
+			path = "StatePattern(状态模式)";
+			sourceTree = "<group>";
+		};
 		F7766CA620EA115A00636752 /* TemplateMethodPattern(模板方法模式) */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,6 +401,32 @@
 			path = "BuliderPattern(建造者模式)";
 			sourceTree = "<group>";
 		};
+		F786595320ECCDF1000817BE /* AdapterPattern(适配器模式) */ = {
+			isa = PBXGroup;
+			children = (
+				F7A6F3CC20EDB83D00615A41 /* TFQNBAPlayer.h */,
+				F7A6F3CD20EDB83D00615A41 /* TFQNBAPlayer.m */,
+				F7A6F3CF20EDB8C200615A41 /* TFQNBAKobe.h */,
+				F7A6F3D020EDB8C200615A41 /* TFQNBAKobe.m */,
+				F7A6F3D220EDBAA100615A41 /* TFQNBAYaoMing.h */,
+				F7A6F3D320EDBAA100615A41 /* TFQNBAYaoMing.m */,
+				F7A6F3D520EDBAB300615A41 /* TFQTranslater.h */,
+				F7A6F3D620EDBAB300615A41 /* TFQTranslater.m */,
+			);
+			path = "AdapterPattern(适配器模式)";
+			sourceTree = "<group>";
+		};
+		F786595420ECD7EF000817BE /* MementoPattern(备忘录模式) */ = {
+			isa = PBXGroup;
+			children = (
+				F7A6F3D820EDC0A500615A41 /* TFQGamePlayer.h */,
+				F7A6F3D920EDC0A500615A41 /* TFQGamePlayer.m */,
+				F7A6F3DB20EDC1E300615A41 /* TFQRecord.h */,
+				F7A6F3DC20EDC1E300615A41 /* TFQRecord.m */,
+			);
+			path = "MementoPattern(备忘录模式)";
+			sourceTree = "<group>";
+		};
 		F7A585FE20E4E51900371AD2 /* DecorativePattern(装饰模式) */ = {
 			isa = PBXGroup;
 			children = (
@@ -328,6 +440,13 @@
 				F7A5860F20E4E62100371AD2 /* TFQShoes.m */,
 			);
 			path = "DecorativePattern(装饰模式)";
+			sourceTree = "<group>";
+		};
+		F7A6F3DE20EDC58600615A41 /* CombinatorialPattern(组合模式) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "CombinatorialPattern(组合模式)";
 			sourceTree = "<group>";
 		};
 		F7AC378B20E5E3E7000DC470 /* ProxyPattern(代理模式) */ = {
@@ -400,6 +519,27 @@
 				F7AC704620EB6E7C003C5BD8 /* TFQNotification.m */,
 			);
 			path = "ObserverPattern(观察者模式)";
+			sourceTree = "<group>";
+		};
+		F7AC704820EB850D003C5BD8 /* AbstraceFactoryPattern(抽象工厂模式) */ = {
+			isa = PBXGroup;
+			children = (
+				F76953CD20EC654E0087EDE5 /* TFQDataBase.h */,
+				F76953CE20EC654E0087EDE5 /* TFQDataBase.m */,
+				F76953D020EC65600087EDE5 /* TFQSqlServer.h */,
+				F76953D120EC65600087EDE5 /* TFQSqlServer.m */,
+				F76953D320EC65770087EDE5 /* TFQOracle.h */,
+				F76953D420EC65770087EDE5 /* TFQOracle.m */,
+				F76953D620EC65E80087EDE5 /* TFQCRUD.h */,
+				F76953D720EC65E80087EDE5 /* TFQCRUD.m */,
+				F76953D920EC66020087EDE5 /* TFQCRUDSqlServer.h */,
+				F76953DA20EC66020087EDE5 /* TFQCRUDSqlServer.m */,
+				F76953DC20EC660F0087EDE5 /* TFQCRUDOracle.h */,
+				F76953DD20EC660F0087EDE5 /* TFQCRUDOracle.m */,
+				F76953DF20EC6B200087EDE5 /* TFQDataBaseManager.h */,
+				F76953E020EC6B200087EDE5 /* TFQDataBaseManager.m */,
+			);
+			path = "AbstraceFactoryPattern(抽象工厂模式)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -533,24 +673,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F76953CC20EC619C0087EDE5 /* TFQObserver1.m in Sources */,
 				F7A8C67B20EB1EDF006EB6A9 /* TFQStraTegy.m in Sources */,
 				F7766CB320EA350100636752 /* TFQFund.m in Sources */,
 				F7AC379120E5E504000DC470 /* TFQGiftA.m in Sources */,
+				F786594C20ECB5D2000817BE /* TFQEveningState.m in Sources */,
 				F7AC37AC20E623C6000DC470 /* TFQStudentFactory.m in Sources */,
+				F7A6F3DA20EDC0A500615A41 /* TFQGamePlayer.m in Sources */,
 				F7A5861020E4E62100371AD2 /* TFQShoes.m in Sources */,
 				F73A501F20AC33B8002F2599 /* ViewController.m in Sources */,
+				F786595220ECB6ED000817BE /* TFQWork.m in Sources */,
 				F70E34D720E4C9C500E4F02B /* TFQSubtract.m in Sources */,
 				F70E34D420E4C9B700E4F02B /* TFQAdd.m in Sources */,
 				F70E34D120E4C2E000E4F02B /* TFQOperation.m in Sources */,
 				F7766CAC20EA143100636752 /* TFQTestPaperA.m in Sources */,
 				F73A502A20AC33B8002F2599 /* main.m in Sources */,
 				F7AC704420EB6D70003C5BD8 /* TFQObserver2.m in Sources */,
-				F7AC704120EB6D65003C5BD8 /* TFQObserver1.m in Sources */,
 				F70E34DA20E4C9D200E4F02B /* TFQMultiply.m in Sources */,
+				F7A6F3D120EDB8C200615A41 /* TFQNBAKobe.m in Sources */,
 				F7A5860720E4E5E800371AD2 /* TFQHat.m in Sources */,
+				F786594620ECB5AA000817BE /* TFQNoonState.m in Sources */,
+				F7A6F3D720EDBAB300615A41 /* TFQTranslater.m in Sources */,
 				F70E34DD20E4C9EB00E4F02B /* TFQDivide.m in Sources */,
 				F7A5860420E4E5B200371AD2 /* TFQPerson.m in Sources */,
+				F7A6F3D420EDBAA100615A41 /* TFQNBAYaoMing.m in Sources */,
 				F7AC37AF20E623DF000DC470 /* TFQVolunteerFactory.m in Sources */,
+				F786594320ECB565000817BE /* TFQMorningState.m in Sources */,
 				F7766CB620EA351200636752 /* TFQFirstFund.m in Sources */,
 				F7AC37A420E62301000DC470 /* TFQVolunteer.m in Sources */,
 				F7AC379B20E62288000DC470 /* TFQLeiFeng.m in Sources */,
@@ -558,15 +706,27 @@
 				F7AC379420E5E50D000DC470 /* TFQGiftB.m in Sources */,
 				F7766CBE20EA3BD800636752 /* TFQBuilder.m in Sources */,
 				F73A501C20AC33B8002F2599 /* AppDelegate.m in Sources */,
+				F76953CF20EC654E0087EDE5 /* TFQDataBase.m in Sources */,
 				F7AC379720E5E518000DC470 /* TFQGirlC.m in Sources */,
 				F7AC704720EB6E7C003C5BD8 /* TFQNotification.m in Sources */,
 				F7766CA920EA141000636752 /* TFQSuperTestPaper.m in Sources */,
+				F786594F20ECB5E0000817BE /* TFQSleepState.m in Sources */,
+				F76953D220EC65600087EDE5 /* TFQSqlServer.m in Sources */,
+				F7A6F3CE20EDB83D00615A41 /* TFQNBAPlayer.m in Sources */,
 				F7766CBA20EA352600636752 /* TFQSecondFund.m in Sources */,
 				F7AC37A120E622DE000DC470 /* TFQStudent.m in Sources */,
 				F7A8C67E20EB1FF9006EB6A9 /* TFQBuilderA.m in Sources */,
 				F7AC37A920E623AC000DC470 /* TFQLeiFengFactory.m in Sources */,
 				F7A5860120E4E58D00371AD2 /* TFQDecorator.m in Sources */,
 				F7AC378E20E5E4DD000DC470 /* TFQGift.m in Sources */,
+				F76953E120EC6B200087EDE5 /* TFQDataBaseManager.m in Sources */,
+				F76953DB20EC66020087EDE5 /* TFQCRUDSqlServer.m in Sources */,
+				F7A6F3DD20EDC1E300615A41 /* TFQRecord.m in Sources */,
+				F76953D520EC65770087EDE5 /* TFQOracle.m in Sources */,
+				F786594920ECB5C5000817BE /* TFQAfternoonState.m in Sources */,
+				F76953D820EC65E80087EDE5 /* TFQCRUD.m in Sources */,
+				F76953DE20EC660F0087EDE5 /* TFQCRUDOracle.m in Sources */,
+				F786594020ECB524000817BE /* TFQState.m in Sources */,
 				F7A8C68120EB200B006EB6A9 /* TFQBuilderB.m in Sources */,
 				F7AC37B620E635BE000DC470 /* TFQCopyObject.m in Sources */,
 			);
