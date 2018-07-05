@@ -52,6 +52,10 @@
 		F7A6F3D720EDBAB300615A41 /* TFQTranslater.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A6F3D620EDBAB300615A41 /* TFQTranslater.m */; };
 		F7A6F3DA20EDC0A500615A41 /* TFQGamePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A6F3D920EDC0A500615A41 /* TFQGamePlayer.m */; };
 		F7A6F3DD20EDC1E300615A41 /* TFQRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A6F3DC20EDC1E300615A41 /* TFQRecord.m */; };
+		F7A6F3E320EDFBA200615A41 /* TFQCompany.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A6F3E220EDFBA200615A41 /* TFQCompany.m */; };
+		F7A6F3E620EDFD9300615A41 /* TFQConcreteCompany.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A6F3E520EDFD9300615A41 /* TFQConcreteCompany.m */; };
+		F7A6F3E920EDFDAE00615A41 /* TFQHRDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A6F3E820EDFDAE00615A41 /* TFQHRDepartment.m */; };
+		F7A6F3EC20EDFDBE00615A41 /* TFQMoneyDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A6F3EB20EDFDBE00615A41 /* TFQMoneyDepartment.m */; };
 		F7A8C67B20EB1EDF006EB6A9 /* TFQStraTegy.m in Sources */ = {isa = PBXBuildFile; fileRef = F70E34E020E4D3B000E4F02B /* TFQStraTegy.m */; };
 		F7A8C67E20EB1FF9006EB6A9 /* TFQBuilderA.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A8C67D20EB1FF9006EB6A9 /* TFQBuilderA.m */; };
 		F7A8C68120EB200B006EB6A9 /* TFQBuilderB.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A8C68020EB200B006EB6A9 /* TFQBuilderB.m */; };
@@ -178,6 +182,14 @@
 		F7A6F3D920EDC0A500615A41 /* TFQGamePlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQGamePlayer.m; sourceTree = "<group>"; };
 		F7A6F3DB20EDC1E300615A41 /* TFQRecord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQRecord.h; sourceTree = "<group>"; };
 		F7A6F3DC20EDC1E300615A41 /* TFQRecord.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQRecord.m; sourceTree = "<group>"; };
+		F7A6F3E120EDFBA200615A41 /* TFQCompany.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQCompany.h; sourceTree = "<group>"; };
+		F7A6F3E220EDFBA200615A41 /* TFQCompany.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQCompany.m; sourceTree = "<group>"; };
+		F7A6F3E420EDFD9300615A41 /* TFQConcreteCompany.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQConcreteCompany.h; sourceTree = "<group>"; };
+		F7A6F3E520EDFD9300615A41 /* TFQConcreteCompany.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQConcreteCompany.m; sourceTree = "<group>"; };
+		F7A6F3E720EDFDAE00615A41 /* TFQHRDepartment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQHRDepartment.h; sourceTree = "<group>"; };
+		F7A6F3E820EDFDAE00615A41 /* TFQHRDepartment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQHRDepartment.m; sourceTree = "<group>"; };
+		F7A6F3EA20EDFDBE00615A41 /* TFQMoneyDepartment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQMoneyDepartment.h; sourceTree = "<group>"; };
+		F7A6F3EB20EDFDBE00615A41 /* TFQMoneyDepartment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQMoneyDepartment.m; sourceTree = "<group>"; };
 		F7A8C67C20EB1FF9006EB6A9 /* TFQBuilderA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQBuilderA.h; sourceTree = "<group>"; };
 		F7A8C67D20EB1FF9006EB6A9 /* TFQBuilderA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQBuilderA.m; sourceTree = "<group>"; };
 		F7A8C67F20EB200B006EB6A9 /* TFQBuilderB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQBuilderB.h; sourceTree = "<group>"; };
@@ -287,6 +299,8 @@
 		F73A501920AC33B8002F2599 /* DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				F7A6F3E020EDF4E300615A41 /* SingletonPattern(单例模式) */,
+				F7A6F3DF20EDF4CD00615A41 /* IteratorPattern(迭代器模式) */,
 				F7A6F3DE20EDC58600615A41 /* CombinatorialPattern(组合模式) */,
 				F786595420ECD7EF000817BE /* MementoPattern(备忘录模式) */,
 				F786595320ECCDF1000817BE /* AdapterPattern(适配器模式) */,
@@ -445,8 +459,30 @@
 		F7A6F3DE20EDC58600615A41 /* CombinatorialPattern(组合模式) */ = {
 			isa = PBXGroup;
 			children = (
+				F7A6F3E120EDFBA200615A41 /* TFQCompany.h */,
+				F7A6F3E220EDFBA200615A41 /* TFQCompany.m */,
+				F7A6F3E420EDFD9300615A41 /* TFQConcreteCompany.h */,
+				F7A6F3E520EDFD9300615A41 /* TFQConcreteCompany.m */,
+				F7A6F3E720EDFDAE00615A41 /* TFQHRDepartment.h */,
+				F7A6F3E820EDFDAE00615A41 /* TFQHRDepartment.m */,
+				F7A6F3EA20EDFDBE00615A41 /* TFQMoneyDepartment.h */,
+				F7A6F3EB20EDFDBE00615A41 /* TFQMoneyDepartment.m */,
 			);
 			path = "CombinatorialPattern(组合模式)";
+			sourceTree = "<group>";
+		};
+		F7A6F3DF20EDF4CD00615A41 /* IteratorPattern(迭代器模式) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "IteratorPattern(迭代器模式)";
+			sourceTree = "<group>";
+		};
+		F7A6F3E020EDF4E300615A41 /* SingletonPattern(单例模式) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "SingletonPattern(单例模式)";
 			sourceTree = "<group>";
 		};
 		F7AC378B20E5E3E7000DC470 /* ProxyPattern(代理模式) */ = {
@@ -673,6 +709,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7A6F3E920EDFDAE00615A41 /* TFQHRDepartment.m in Sources */,
 				F76953CC20EC619C0087EDE5 /* TFQObserver1.m in Sources */,
 				F7A8C67B20EB1EDF006EB6A9 /* TFQStraTegy.m in Sources */,
 				F7766CB320EA350100636752 /* TFQFund.m in Sources */,
@@ -691,8 +728,10 @@
 				F7AC704420EB6D70003C5BD8 /* TFQObserver2.m in Sources */,
 				F70E34DA20E4C9D200E4F02B /* TFQMultiply.m in Sources */,
 				F7A6F3D120EDB8C200615A41 /* TFQNBAKobe.m in Sources */,
+				F7A6F3E620EDFD9300615A41 /* TFQConcreteCompany.m in Sources */,
 				F7A5860720E4E5E800371AD2 /* TFQHat.m in Sources */,
 				F786594620ECB5AA000817BE /* TFQNoonState.m in Sources */,
+				F7A6F3EC20EDFDBE00615A41 /* TFQMoneyDepartment.m in Sources */,
 				F7A6F3D720EDBAB300615A41 /* TFQTranslater.m in Sources */,
 				F70E34DD20E4C9EB00E4F02B /* TFQDivide.m in Sources */,
 				F7A5860420E4E5B200371AD2 /* TFQPerson.m in Sources */,
@@ -727,6 +766,7 @@
 				F76953D820EC65E80087EDE5 /* TFQCRUD.m in Sources */,
 				F76953DE20EC660F0087EDE5 /* TFQCRUDOracle.m in Sources */,
 				F786594020ECB524000817BE /* TFQState.m in Sources */,
+				F7A6F3E320EDFBA200615A41 /* TFQCompany.m in Sources */,
 				F7A8C68120EB200B006EB6A9 /* TFQBuilderB.m in Sources */,
 				F7AC37B620E635BE000DC470 /* TFQCopyObject.m in Sources */,
 			);

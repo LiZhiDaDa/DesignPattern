@@ -30,6 +30,9 @@
 #import "TFQNBAKobe.h"
 #import "TFQGamePlayer.h"
 #import "TFQRecord.h"
+#import "TFQHRDepartment.h"
+#import "TFQMoneyDepartment.h"
+#import "TFQConcreteCompany.h"
 
 @interface ViewController ()
 
@@ -64,23 +67,95 @@
 //    [self statePattern];//状态模式
 //    [self adapterPattern];//适配器模式
 //    [self mementoPattern];//备忘录模式
-    [self combinatorialPattern];//组合模式
+//    [self combinatorialPattern];//组合模式
+//    [self iteratorPattern];//迭代器模式
+//    [self sigletonPattern];//单例模式
 }
+
+#pragma mark - 单例模式
+/**
+ *  单例模式：保证一个类仅有一个实例，并提供一个访问它的全局访问点
+ *
+ *  单例模式这种吊炸天的东西，大家应该都有使用，最简单的方法就是dispatch_once创建，
+ *  但是这种方法创建必须调用对应的类方法，如果用alloc 或者copy创建的话，还是会创建
+ *  一个新对象，这时候大家就要重写copywithzone方法，这个大家自行百度吧。
+ *  但是自己用的话，来一个类方法就已经够用了。自己雪薇注意一下就可以了。
+ *  涉及到java的懒汉式单例，饿汉式单例。
+ 
+ */
+- (void)sigletonPattern{
+    //大家可以打印一下试试  我记得onceToken初始化是0  执行之后变为1就再也不执行了。
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        //do something create once
+    });
+}
+
+#pragma mark - 迭代器模式
+/**
+ *  迭代器模式：提供一种方法顺序访问一个聚合对象中各个元素，而又不暴露该对象的内部表示
+ *
+ *  书中举得例子是while循环，知道循环结束，while停止。
+*   简单来说就是for循环，把iOS的几种循环列举一下得了。具体的效率问题大家可以自己个儿百度去。
+ */
+- (void)iteratorPattern{
+    for(int i=0; i<10; i++){
+        NSLog(@"=%d",i);
+    }
+    NSArray *array = @[@1,@2,@3,@4];
+    for(NSNumber *i in array){
+        NSLog(@"==%@",i);
+    }
+    [array enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        NSLog(@"===%@",obj);
+    }];
+}
+
 
 #pragma mark - 组合模式
 /**
+ *  组合模式：
  *
+ *  组合模式简直是一个吊炸天的设计模式，有那么点递归的意思。
  *
- *
- *
- *
- *
- *
- *
- *
+ *  书中的例子是写了一个大公司的OA系统，但是大公司下边还有子公司，子公司还要子公司，这时候组合模式的
+ *  好处就体现的淋漓尽致。
+ *                                 -HR
+ *                     -HR         -财务     -HR
+ *  下边代码的结构  -北京 -石家庄分公司 -桥西分公司-财务
+ *                     -财务        -桥东分公司-HR
+ *                                          -财务
  */
 - (void)combinatorialPattern{
+    TFQConcreteCompany *beijingCompany = [[TFQConcreteCompany alloc] initWithName:@"北京总公司"];
+    TFQHRDepartment *beijingHR = [[TFQHRDepartment alloc] initWithName:@"北京HR"];
+    TFQMoneyDepartment *beijingMoney = [[TFQMoneyDepartment alloc] initWithName:@"北京财务"];
+    [beijingCompany add:beijingHR];
+    [beijingCompany add:beijingMoney];
     
+    TFQConcreteCompany *shijiazhuangCompany = [[TFQConcreteCompany alloc] initWithName:@"石家庄分公司"];
+    [beijingCompany add:shijiazhuangCompany];
+    TFQHRDepartment *shijiazhuangHR = [[TFQHRDepartment alloc] initWithName:@"石家庄HR"];
+    TFQMoneyDepartment *shijiazhuangMoney = [[TFQMoneyDepartment alloc] initWithName:@"石家庄财务"];
+    [shijiazhuangCompany add:shijiazhuangHR];
+    [shijiazhuangCompany add:shijiazhuangMoney];
+    
+    TFQConcreteCompany *qiaodongCompany = [[TFQConcreteCompany alloc] initWithName:@"石家庄桥东分公司"];
+    [shijiazhuangCompany add:qiaodongCompany];
+    TFQHRDepartment *qiaodongHR = [[TFQHRDepartment alloc] initWithName:@"石家庄桥东HR"];
+    TFQMoneyDepartment *qiaodongMoney = [[TFQMoneyDepartment alloc] initWithName:@"石家庄桥东财务"];
+    [qiaodongCompany add:qiaodongHR];
+    [qiaodongCompany add:qiaodongMoney];
+    
+    TFQConcreteCompany *qiaoxiCompany = [[TFQConcreteCompany alloc] initWithName:@"石家庄桥西分公司"];
+    [shijiazhuangCompany add:qiaoxiCompany];
+    TFQHRDepartment *qiaoxiHR = [[TFQHRDepartment alloc] initWithName:@"石家庄桥西HR"];
+    TFQMoneyDepartment *qiaoxiMoney = [[TFQMoneyDepartment alloc] initWithName:@"石家庄桥西财务"];
+    [qiaoxiCompany add:qiaoxiHR];
+    [qiaoxiCompany add:qiaoxiMoney];
+    
+    //打印结构图
+    [beijingCompany displayCompanyWithCount:1];
 }
 
 #pragma mark - 备忘录模式
