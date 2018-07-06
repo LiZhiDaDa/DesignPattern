@@ -46,7 +46,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.textField = [[UITextField alloc] initWithFrame:CGRectMake(100, 100, 120, 30)];
     self.textField.backgroundColor = [UIColor lightGrayColor];
     [self.view addSubview:self.textField];
@@ -70,6 +69,102 @@
 //    [self combinatorialPattern];//组合模式
 //    [self iteratorPattern];//迭代器模式
 //    [self sigletonPattern];//单例模式
+    
+}
+
+#pragma mark - 享元模式
+/**
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
+- (void)flyweightPattern{
+    
+}
+
+#pragma mark - 中介者模式
+/**
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
+- (void)mediatorPattern{
+    
+}
+
+#pragma mark - 职责链模式
+/**
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
+- (void)chainOfResponsibilityPattern{
+    
+}
+
+#pragma mark - 命令模式
+/**
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
+- (void)commandPattern{
+    
+}
+
+#pragma mark - 桥接模式
+/**
+ *  桥接模式：讲抽象部分与他的实现部分分离，使他们都可以独立地变化。
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
+- (void)bridgePattern{
+    
 }
 
 #pragma mark - 单例模式
@@ -81,7 +176,6 @@
  *  一个新对象，这时候大家就要重写copywithzone方法，这个大家自行百度吧。
  *  但是自己用的话，来一个类方法就已经够用了。自己雪薇注意一下就可以了。
  *  涉及到java的懒汉式单例，饿汉式单例。
- 
  */
 - (void)sigletonPattern{
     //大家可以打印一下试试  我记得onceToken初始化是0  执行之后变为1就再也不执行了。

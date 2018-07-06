@@ -299,6 +299,11 @@
 		F73A501920AC33B8002F2599 /* DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				F798E00520EF7FF600B82118 /* FlyweightPattern(享元模式) */,
+				F798E00420EF7FDD00B82118 /* MediatorPattern(中介者模式) */,
+				F798E00320EF7FBE00B82118 /* ChainOfResponsibilityPattern(职责链模式) */,
+				F798E00220EF7FA800B82118 /* CommandPattern(命令模式) */,
+				F798E00120EF7F9500B82118 /* BridgePattern(桥接模式) */,
 				F7A6F3E020EDF4E300615A41 /* SingletonPattern(单例模式) */,
 				F7A6F3DF20EDF4CD00615A41 /* IteratorPattern(迭代器模式) */,
 				F7A6F3DE20EDC58600615A41 /* CombinatorialPattern(组合模式) */,
@@ -439,6 +444,41 @@
 				F7A6F3DC20EDC1E300615A41 /* TFQRecord.m */,
 			);
 			path = "MementoPattern(备忘录模式)";
+			sourceTree = "<group>";
+		};
+		F798E00120EF7F9500B82118 /* BridgePattern(桥接模式) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "BridgePattern(桥接模式)";
+			sourceTree = "<group>";
+		};
+		F798E00220EF7FA800B82118 /* CommandPattern(命令模式) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "CommandPattern(命令模式)";
+			sourceTree = "<group>";
+		};
+		F798E00320EF7FBE00B82118 /* ChainOfResponsibilityPattern(职责链模式) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "ChainOfResponsibilityPattern(职责链模式)";
+			sourceTree = "<group>";
+		};
+		F798E00420EF7FDD00B82118 /* MediatorPattern(中介者模式) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "MediatorPattern(中介者模式)";
+			sourceTree = "<group>";
+		};
+		F798E00520EF7FF600B82118 /* FlyweightPattern(享元模式) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "FlyweightPattern(享元模式)";
 			sourceTree = "<group>";
 		};
 		F7A585FE20E4E51900371AD2 /* DecorativePattern(装饰模式) */ = {
