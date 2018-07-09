@@ -45,6 +45,12 @@
 #import "TFQLeader1.h"
 #import "TFQLeader2.h"
 #import "TFQLeader3.h"
+#import "TFQUSA.h"
+#import "TFQIraq.h"
+#import "TFQUnitedNations.h"
+#import "TFQWebSite.h"
+#import "TFQWebUser.h"
+#import "TFQWebFactory.h"
 
 @interface ViewController ()
 
@@ -83,45 +89,53 @@
 //    [self sigletonPattern];//单例模式
 //    [self bridgePattern];//桥接模式
 //    [self commandPattern];//命令模式
-    [self chainOfResponsibilityPattern];//职责链模式
+//    [self chainOfResponsibilityPattern];//职责链模式
+//    [self mediatorPattern];//中介者模式
+    [self flyweightPattern];//享元模式
 }
+
 
 #pragma mark - 享元模式
 /**
+ *  享元模式：运用共享技术有效地支持大量细粒度的对象。
  *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
+ *  书中举的例子是小菜做网站，做完之后又需要做一个大体类似的网站，直接复制过去也能实现
+ *  功能，但是浪费内存浪费时间，这时候就用到了共享模式，基本上不用做修改就可以实现功能。
+ *  代码中解释的很详细了。可以研读代码。
  */
 - (void)flyweightPattern{
+    TFQWebFactory *webFactory = [[TFQWebFactory alloc] init];
+    TFQWebSite *site1 = [webFactory getWebSiteWithType:@"公司简介"];
+    site1.user = [[TFQWebUser alloc] initWithName:@"张三"];
+    TFQWebSite *site2 = [webFactory getWebSiteWithType:@"博客"];
+    site2.user = [[TFQWebUser alloc] initWithName:@"张si"];
+    TFQWebSite *site3 = [webFactory getWebSiteWithType:@"公司简介"];
+    site3.user = [[TFQWebUser alloc] initWithName:@"张五"];
+    TFQWebSite *site4 = [webFactory getWebSiteWithType:@"公司简介"];
+    site4.user = [[TFQWebUser alloc] initWithName:@"张六"];
     
+    [webFactory outputWebsites];
 }
 
 #pragma mark - 中介者模式
 /**
- *  中介者模式：
+ *  中介者模式：用一个中介者对象来封装一系列的对象交互。中介者使各对象不需要显式地相互
+ *  引用，从而使其耦合松散，而且可以独立地改变他们之间的交互。
  *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
+ *  书中的例子是举得联合国的例子，各国之间交流都要通过联合国。让联合国持有各个国家的属性，
+ *  国家的任何交流都要通过联合国转达。
  */
 - (void)mediatorPattern{
-    
+    TFQUnitedNations *UN = [[TFQUnitedNations alloc] init];
+    TFQUSA *USA = [[TFQUSA alloc] initWithMediator:UN];
+    USA.name = @"美国";
+    TFQIraq *Iraq = [[TFQIraq alloc] initWithMediator:UN];
+    Iraq.name = @"伊拉克";
+    UN.USA = USA;
+    UN.Iraq = Iraq;
+ 
+    [USA sendMessage:@"我要打你"];
+    [Iraq sendMessage:@"我不要你打"];
 }
 
 #pragma mark - 职责链模式

@@ -44,6 +44,13 @@
 		F77187D320F35029009C2689 /* TFQLeader1.m in Sources */ = {isa = PBXBuildFile; fileRef = F77187D220F35029009C2689 /* TFQLeader1.m */; };
 		F77187D620F35039009C2689 /* TFQLeader2.m in Sources */ = {isa = PBXBuildFile; fileRef = F77187D520F35039009C2689 /* TFQLeader2.m */; };
 		F77187D920F35042009C2689 /* TFQLeader3.m in Sources */ = {isa = PBXBuildFile; fileRef = F77187D820F35042009C2689 /* TFQLeader3.m */; };
+		F77187DF20F360EB009C2689 /* TFQCountry.m in Sources */ = {isa = PBXBuildFile; fileRef = F77187DE20F360EB009C2689 /* TFQCountry.m */; };
+		F77187E220F360FB009C2689 /* TFQUSA.m in Sources */ = {isa = PBXBuildFile; fileRef = F77187E120F360FB009C2689 /* TFQUSA.m */; };
+		F77187E520F36117009C2689 /* TFQIraq.m in Sources */ = {isa = PBXBuildFile; fileRef = F77187E420F36117009C2689 /* TFQIraq.m */; };
+		F77187E820F3612E009C2689 /* TFQUnitedNations.m in Sources */ = {isa = PBXBuildFile; fileRef = F77187E720F3612E009C2689 /* TFQUnitedNations.m */; };
+		F77187EB20F36E54009C2689 /* TFQWebUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F77187EA20F36E54009C2689 /* TFQWebUser.m */; };
+		F77187EE20F36E61009C2689 /* TFQWebSite.m in Sources */ = {isa = PBXBuildFile; fileRef = F77187ED20F36E61009C2689 /* TFQWebSite.m */; };
+		F77187F120F36E6C009C2689 /* TFQWebFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F77187F020F36E6C009C2689 /* TFQWebFactory.m */; };
 		F7766CA920EA141000636752 /* TFQSuperTestPaper.m in Sources */ = {isa = PBXBuildFile; fileRef = F7766CA820EA141000636752 /* TFQSuperTestPaper.m */; };
 		F7766CAC20EA143100636752 /* TFQTestPaperA.m in Sources */ = {isa = PBXBuildFile; fileRef = F7766CAB20EA143100636752 /* TFQTestPaperA.m */; };
 		F7766CAF20EA143F00636752 /* TFQTestPaperB.m in Sources */ = {isa = PBXBuildFile; fileRef = F7766CAE20EA143F00636752 /* TFQTestPaperB.m */; };
@@ -182,6 +189,20 @@
 		F77187D520F35039009C2689 /* TFQLeader2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQLeader2.m; sourceTree = "<group>"; };
 		F77187D720F35042009C2689 /* TFQLeader3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQLeader3.h; sourceTree = "<group>"; };
 		F77187D820F35042009C2689 /* TFQLeader3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQLeader3.m; sourceTree = "<group>"; };
+		F77187DD20F360EB009C2689 /* TFQCountry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQCountry.h; sourceTree = "<group>"; };
+		F77187DE20F360EB009C2689 /* TFQCountry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQCountry.m; sourceTree = "<group>"; };
+		F77187E020F360FB009C2689 /* TFQUSA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQUSA.h; sourceTree = "<group>"; };
+		F77187E120F360FB009C2689 /* TFQUSA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQUSA.m; sourceTree = "<group>"; };
+		F77187E320F36117009C2689 /* TFQIraq.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQIraq.h; sourceTree = "<group>"; };
+		F77187E420F36117009C2689 /* TFQIraq.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQIraq.m; sourceTree = "<group>"; };
+		F77187E620F3612E009C2689 /* TFQUnitedNations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQUnitedNations.h; sourceTree = "<group>"; };
+		F77187E720F3612E009C2689 /* TFQUnitedNations.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQUnitedNations.m; sourceTree = "<group>"; };
+		F77187E920F36E54009C2689 /* TFQWebUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQWebUser.h; sourceTree = "<group>"; };
+		F77187EA20F36E54009C2689 /* TFQWebUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQWebUser.m; sourceTree = "<group>"; };
+		F77187EC20F36E61009C2689 /* TFQWebSite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQWebSite.h; sourceTree = "<group>"; };
+		F77187ED20F36E61009C2689 /* TFQWebSite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQWebSite.m; sourceTree = "<group>"; };
+		F77187EF20F36E6C009C2689 /* TFQWebFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQWebFactory.h; sourceTree = "<group>"; };
+		F77187F020F36E6C009C2689 /* TFQWebFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQWebFactory.m; sourceTree = "<group>"; };
 		F7766CA720EA141000636752 /* TFQSuperTestPaper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQSuperTestPaper.h; sourceTree = "<group>"; };
 		F7766CA820EA141000636752 /* TFQSuperTestPaper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQSuperTestPaper.m; sourceTree = "<group>"; };
 		F7766CAA20EA143100636752 /* TFQTestPaperA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQTestPaperA.h; sourceTree = "<group>"; };
@@ -550,6 +571,14 @@
 		F798E00420EF7FDD00B82118 /* MediatorPattern(中介者模式) */ = {
 			isa = PBXGroup;
 			children = (
+				F77187DD20F360EB009C2689 /* TFQCountry.h */,
+				F77187DE20F360EB009C2689 /* TFQCountry.m */,
+				F77187E020F360FB009C2689 /* TFQUSA.h */,
+				F77187E120F360FB009C2689 /* TFQUSA.m */,
+				F77187E320F36117009C2689 /* TFQIraq.h */,
+				F77187E420F36117009C2689 /* TFQIraq.m */,
+				F77187E620F3612E009C2689 /* TFQUnitedNations.h */,
+				F77187E720F3612E009C2689 /* TFQUnitedNations.m */,
 			);
 			path = "MediatorPattern(中介者模式)";
 			sourceTree = "<group>";
@@ -557,6 +586,12 @@
 		F798E00520EF7FF600B82118 /* FlyweightPattern(享元模式) */ = {
 			isa = PBXGroup;
 			children = (
+				F77187E920F36E54009C2689 /* TFQWebUser.h */,
+				F77187EA20F36E54009C2689 /* TFQWebUser.m */,
+				F77187EC20F36E61009C2689 /* TFQWebSite.h */,
+				F77187ED20F36E61009C2689 /* TFQWebSite.m */,
+				F77187EF20F36E6C009C2689 /* TFQWebFactory.h */,
+				F77187F020F36E6C009C2689 /* TFQWebFactory.m */,
 			);
 			path = "FlyweightPattern(享元模式)";
 			sourceTree = "<group>";
@@ -834,7 +869,9 @@
 				F77187C720F340BA009C2689 /* TFQSkewer.m in Sources */,
 				F7A8C67B20EB1EDF006EB6A9 /* TFQStraTegy.m in Sources */,
 				F7766CB320EA350100636752 /* TFQFund.m in Sources */,
+				F77187E220F360FB009C2689 /* TFQUSA.m in Sources */,
 				F7AC379120E5E504000DC470 /* TFQGiftA.m in Sources */,
+				F77187EE20F36E61009C2689 /* TFQWebSite.m in Sources */,
 				F77187C420F340A0009C2689 /* TFQChickenWing.m in Sources */,
 				F786594C20ECB5D2000817BE /* TFQEveningState.m in Sources */,
 				F7AC37AC20E623C6000DC470 /* TFQStudentFactory.m in Sources */,
@@ -854,12 +891,15 @@
 				F7766CAC20EA143100636752 /* TFQTestPaperA.m in Sources */,
 				F73A502A20AC33B8002F2599 /* main.m in Sources */,
 				F7AC704420EB6D70003C5BD8 /* TFQObserver2.m in Sources */,
+				F77187E520F36117009C2689 /* TFQIraq.m in Sources */,
 				F70E34DA20E4C9D200E4F02B /* TFQMultiply.m in Sources */,
 				F7A6F3D120EDB8C200615A41 /* TFQNBAKobe.m in Sources */,
+				F77187F120F36E6C009C2689 /* TFQWebFactory.m in Sources */,
 				F7A6F3E620EDFD9300615A41 /* TFQConcreteCompany.m in Sources */,
 				F7A5860720E4E5E800371AD2 /* TFQHat.m in Sources */,
 				F786594620ECB5AA000817BE /* TFQNoonState.m in Sources */,
 				F7A6F3EC20EDFDBE00615A41 /* TFQMoneyDepartment.m in Sources */,
+				F77187DF20F360EB009C2689 /* TFQCountry.m in Sources */,
 				F77187AF20F314F9009C2689 /* TFQPhoneM.m in Sources */,
 				F7A6F3D720EDBAB300615A41 /* TFQTranslater.m in Sources */,
 				F77187B820F31557009C2689 /* TFQPhoneGameA.m in Sources */,
@@ -871,6 +911,7 @@
 				F7766CB620EA351200636752 /* TFQFirstFund.m in Sources */,
 				F7AC37A420E62301000DC470 /* TFQVolunteer.m in Sources */,
 				F7AC379B20E62288000DC470 /* TFQLeiFeng.m in Sources */,
+				F77187E820F3612E009C2689 /* TFQUnitedNations.m in Sources */,
 				F77187D020F34FE6009C2689 /* TFQLeader.m in Sources */,
 				F7766CAF20EA143F00636752 /* TFQTestPaperB.m in Sources */,
 				F77187CA20F34105009C2689 /* TFQWaiter.m in Sources */,
@@ -905,6 +946,7 @@
 				F7A6F3E320EDFBA200615A41 /* TFQCompany.m in Sources */,
 				F7A8C68120EB200B006EB6A9 /* TFQBuilderB.m in Sources */,
 				F7AC37B620E635BE000DC470 /* TFQCopyObject.m in Sources */,
+				F77187EB20F36E54009C2689 /* TFQWebUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
