@@ -33,6 +33,18 @@
 #import "TFQHRDepartment.h"
 #import "TFQMoneyDepartment.h"
 #import "TFQConcreteCompany.h"
+#import "TFQPhoneM.h"
+#import "TFQPhoneN.h"
+#import "TFQPhoneGameA.h"
+#import "TFQPhoneGameB.h"
+#import "TFQChickenWing.h"
+#import "TFQSkewer.h"
+#import "TFQWaiter.h"
+#import "TFQCook.h"
+#import "TFQRequest.h"
+#import "TFQLeader1.h"
+#import "TFQLeader2.h"
+#import "TFQLeader3.h"
 
 @interface ViewController ()
 
@@ -69,7 +81,9 @@
 //    [self combinatorialPattern];//组合模式
 //    [self iteratorPattern];//迭代器模式
 //    [self sigletonPattern];//单例模式
-    
+//    [self bridgePattern];//桥接模式
+//    [self commandPattern];//命令模式
+    [self chainOfResponsibilityPattern];//职责链模式
 }
 
 #pragma mark - 享元模式
@@ -93,7 +107,7 @@
 
 #pragma mark - 中介者模式
 /**
- *
+ *  中介者模式：
  *
  *
  *
@@ -112,59 +126,70 @@
 
 #pragma mark - 职责链模式
 /**
+ *  职责链模式：使多个对象都有机会处理请求，从而避免请求的发送者和接受者之间的耦合关系。
+ *  将这个对象连成一条链，并沿着这条链传递该请求，直到有一个对象处理它位置。
  *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
+ *  书中举得例子是小菜请求加薪，然后需要经理、总监、总经理依次审批。开始的代码是if判断，
+ *  虽然也能完成任务，但是略显笨拙，改用职责链模式之后就洋气了许多。
+ *  个人感觉职责链模式跟状态模式是一样的，都是分情况，但是区别是啥呢，职责链的层级比较明显，
+ *  职责是一步一步变大的，侧重性比较强。
  */
 - (void)chainOfResponsibilityPattern{
+    TFQRequest *request = [[TFQRequest alloc] init];
+    request.requestName = @"张三";
+//    request.requestType = @"加薪";
+//    request.requestCount = 20000;
+        request.requestType = @"请假";
+        request.requestCount = 100;
+    TFQLeader1 *leader1 = [[TFQLeader1 alloc] initWithName:@"小领导"];
+    TFQLeader2 *leader2 = [[TFQLeader2 alloc] initWithName:@"中领导"];
+    TFQLeader3 *leader3 = [[TFQLeader3 alloc] initWithName:@"大领导"];
+    leader1.superior = leader2;
+    leader2.superior = leader3;
     
+    [leader1 handelRequest:request];
 }
 
 #pragma mark - 命令模式
 /**
+ *  命令模式：将一个请求封装为一个对象，从而使你可用不同的请求对客户进行参数化；
+ *  对请求排队或记录请求日志，以及支持可撤销的操作。
  *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
+ *  书中的例子讲的是小菜大鸟去吃烤串，然后用代码实现点烤串的操作，这时候就需要用低耦合的方式实现。
  */
 - (void)commandPattern{
+    TFQWaiter *waiter = [[TFQWaiter alloc] init];
+    TFQCook *cook = [[TFQCook alloc] init];
+    TFQChickenWing *wing = [[TFQChickenWing alloc] initWithCooke:cook];
+    TFQSkewer *skewer = [[TFQSkewer alloc] initWithCooke:cook];
     
+    [waiter receiveCommand:wing];
+    [waiter receiveCommand:skewer];
+    [waiter receiveCommand:wing];
+    [waiter notifyCook];
 }
 
 #pragma mark - 桥接模式
 /**
  *  桥接模式：讲抽象部分与他的实现部分分离，使他们都可以独立地变化。
  *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
+ *  桥接模式书中举得例子是MN两个品牌的手机，安装两个不同的游戏，开始写的话可能就需要写
+ *  M里边有两个游戏属性，N里边有两个游戏属性，这样再有十个手机品牌的话，每个手机品牌就要
+ *  写两个手机属性。算下来就是写了二十个手机属性，
+ *  现在呢，我们把手机单独分离出来，把游戏也分离出来，给手机添加一个加载游戏的方法，酱紫
+ *  的话游戏就需要声明一遍就可以了。
  */
 - (void)bridgePattern{
-    
+    TFQPhoneM *M = [[TFQPhoneM alloc] init];
+    TFQPhoneN *N = [[TFQPhoneN alloc] init];
+    TFQPhoneGameA *gameA = [[TFQPhoneGameA alloc] init];
+    TFQPhoneGameB *gameB = [[TFQPhoneGameB alloc] init];
+    [M setPhoneGame:gameA];
+    [M run];
+    [M setPhoneGame:gameB];
+    [M run];
+    [N setPhoneGame:gameA];
+    [N run];
 }
 
 #pragma mark - 单例模式

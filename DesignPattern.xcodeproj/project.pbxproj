@@ -28,6 +28,22 @@
 		F76953DB20EC66020087EDE5 /* TFQCRUDSqlServer.m in Sources */ = {isa = PBXBuildFile; fileRef = F76953DA20EC66020087EDE5 /* TFQCRUDSqlServer.m */; };
 		F76953DE20EC660F0087EDE5 /* TFQCRUDOracle.m in Sources */ = {isa = PBXBuildFile; fileRef = F76953DD20EC660F0087EDE5 /* TFQCRUDOracle.m */; };
 		F76953E120EC6B200087EDE5 /* TFQDataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F76953E020EC6B200087EDE5 /* TFQDataBaseManager.m */; };
+		F77187AC20F314E3009C2689 /* TFQPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = F77187AB20F314E3009C2689 /* TFQPhone.m */; };
+		F77187AF20F314F9009C2689 /* TFQPhoneM.m in Sources */ = {isa = PBXBuildFile; fileRef = F77187AE20F314F9009C2689 /* TFQPhoneM.m */; };
+		F77187B220F31503009C2689 /* TFQPhoneN.m in Sources */ = {isa = PBXBuildFile; fileRef = F77187B120F31503009C2689 /* TFQPhoneN.m */; };
+		F77187B520F31515009C2689 /* TFQPhoneGame.m in Sources */ = {isa = PBXBuildFile; fileRef = F77187B420F31515009C2689 /* TFQPhoneGame.m */; };
+		F77187B820F31557009C2689 /* TFQPhoneGameA.m in Sources */ = {isa = PBXBuildFile; fileRef = F77187B720F31557009C2689 /* TFQPhoneGameA.m */; };
+		F77187BB20F315A0009C2689 /* TFQPhoneGameB.m in Sources */ = {isa = PBXBuildFile; fileRef = F77187BA20F315A0009C2689 /* TFQPhoneGameB.m */; };
+		F77187BE20F33FEF009C2689 /* TFQCook.m in Sources */ = {isa = PBXBuildFile; fileRef = F77187BD20F33FEF009C2689 /* TFQCook.m */; };
+		F77187C120F34080009C2689 /* TFQCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = F77187C020F34080009C2689 /* TFQCommand.m */; };
+		F77187C420F340A0009C2689 /* TFQChickenWing.m in Sources */ = {isa = PBXBuildFile; fileRef = F77187C320F340A0009C2689 /* TFQChickenWing.m */; };
+		F77187C720F340BA009C2689 /* TFQSkewer.m in Sources */ = {isa = PBXBuildFile; fileRef = F77187C620F340BA009C2689 /* TFQSkewer.m */; };
+		F77187CA20F34105009C2689 /* TFQWaiter.m in Sources */ = {isa = PBXBuildFile; fileRef = F77187C920F34105009C2689 /* TFQWaiter.m */; };
+		F77187CD20F34FCB009C2689 /* TFQRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F77187CC20F34FCB009C2689 /* TFQRequest.m */; };
+		F77187D020F34FE6009C2689 /* TFQLeader.m in Sources */ = {isa = PBXBuildFile; fileRef = F77187CF20F34FE6009C2689 /* TFQLeader.m */; };
+		F77187D320F35029009C2689 /* TFQLeader1.m in Sources */ = {isa = PBXBuildFile; fileRef = F77187D220F35029009C2689 /* TFQLeader1.m */; };
+		F77187D620F35039009C2689 /* TFQLeader2.m in Sources */ = {isa = PBXBuildFile; fileRef = F77187D520F35039009C2689 /* TFQLeader2.m */; };
+		F77187D920F35042009C2689 /* TFQLeader3.m in Sources */ = {isa = PBXBuildFile; fileRef = F77187D820F35042009C2689 /* TFQLeader3.m */; };
 		F7766CA920EA141000636752 /* TFQSuperTestPaper.m in Sources */ = {isa = PBXBuildFile; fileRef = F7766CA820EA141000636752 /* TFQSuperTestPaper.m */; };
 		F7766CAC20EA143100636752 /* TFQTestPaperA.m in Sources */ = {isa = PBXBuildFile; fileRef = F7766CAB20EA143100636752 /* TFQTestPaperA.m */; };
 		F7766CAF20EA143F00636752 /* TFQTestPaperB.m in Sources */ = {isa = PBXBuildFile; fileRef = F7766CAE20EA143F00636752 /* TFQTestPaperB.m */; };
@@ -134,6 +150,38 @@
 		F76953DD20EC660F0087EDE5 /* TFQCRUDOracle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQCRUDOracle.m; sourceTree = "<group>"; };
 		F76953DF20EC6B200087EDE5 /* TFQDataBaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQDataBaseManager.h; sourceTree = "<group>"; };
 		F76953E020EC6B200087EDE5 /* TFQDataBaseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQDataBaseManager.m; sourceTree = "<group>"; };
+		F77187AA20F314E3009C2689 /* TFQPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQPhone.h; sourceTree = "<group>"; };
+		F77187AB20F314E3009C2689 /* TFQPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQPhone.m; sourceTree = "<group>"; };
+		F77187AD20F314F9009C2689 /* TFQPhoneM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQPhoneM.h; sourceTree = "<group>"; };
+		F77187AE20F314F9009C2689 /* TFQPhoneM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQPhoneM.m; sourceTree = "<group>"; };
+		F77187B020F31503009C2689 /* TFQPhoneN.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQPhoneN.h; sourceTree = "<group>"; };
+		F77187B120F31503009C2689 /* TFQPhoneN.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQPhoneN.m; sourceTree = "<group>"; };
+		F77187B320F31515009C2689 /* TFQPhoneGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQPhoneGame.h; sourceTree = "<group>"; };
+		F77187B420F31515009C2689 /* TFQPhoneGame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQPhoneGame.m; sourceTree = "<group>"; };
+		F77187B620F31557009C2689 /* TFQPhoneGameA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQPhoneGameA.h; sourceTree = "<group>"; };
+		F77187B720F31557009C2689 /* TFQPhoneGameA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQPhoneGameA.m; sourceTree = "<group>"; };
+		F77187B920F315A0009C2689 /* TFQPhoneGameB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQPhoneGameB.h; sourceTree = "<group>"; };
+		F77187BA20F315A0009C2689 /* TFQPhoneGameB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQPhoneGameB.m; sourceTree = "<group>"; };
+		F77187BC20F33FEF009C2689 /* TFQCook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQCook.h; sourceTree = "<group>"; };
+		F77187BD20F33FEF009C2689 /* TFQCook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQCook.m; sourceTree = "<group>"; };
+		F77187BF20F34080009C2689 /* TFQCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQCommand.h; sourceTree = "<group>"; };
+		F77187C020F34080009C2689 /* TFQCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQCommand.m; sourceTree = "<group>"; };
+		F77187C220F340A0009C2689 /* TFQChickenWing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQChickenWing.h; sourceTree = "<group>"; };
+		F77187C320F340A0009C2689 /* TFQChickenWing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQChickenWing.m; sourceTree = "<group>"; };
+		F77187C520F340BA009C2689 /* TFQSkewer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQSkewer.h; sourceTree = "<group>"; };
+		F77187C620F340BA009C2689 /* TFQSkewer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQSkewer.m; sourceTree = "<group>"; };
+		F77187C820F34105009C2689 /* TFQWaiter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQWaiter.h; sourceTree = "<group>"; };
+		F77187C920F34105009C2689 /* TFQWaiter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQWaiter.m; sourceTree = "<group>"; };
+		F77187CB20F34FCB009C2689 /* TFQRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQRequest.h; sourceTree = "<group>"; };
+		F77187CC20F34FCB009C2689 /* TFQRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQRequest.m; sourceTree = "<group>"; };
+		F77187CE20F34FE6009C2689 /* TFQLeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQLeader.h; sourceTree = "<group>"; };
+		F77187CF20F34FE6009C2689 /* TFQLeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQLeader.m; sourceTree = "<group>"; };
+		F77187D120F35029009C2689 /* TFQLeader1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQLeader1.h; sourceTree = "<group>"; };
+		F77187D220F35029009C2689 /* TFQLeader1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQLeader1.m; sourceTree = "<group>"; };
+		F77187D420F35039009C2689 /* TFQLeader2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQLeader2.h; sourceTree = "<group>"; };
+		F77187D520F35039009C2689 /* TFQLeader2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQLeader2.m; sourceTree = "<group>"; };
+		F77187D720F35042009C2689 /* TFQLeader3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQLeader3.h; sourceTree = "<group>"; };
+		F77187D820F35042009C2689 /* TFQLeader3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQLeader3.m; sourceTree = "<group>"; };
 		F7766CA720EA141000636752 /* TFQSuperTestPaper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQSuperTestPaper.h; sourceTree = "<group>"; };
 		F7766CA820EA141000636752 /* TFQSuperTestPaper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQSuperTestPaper.m; sourceTree = "<group>"; };
 		F7766CAA20EA143100636752 /* TFQTestPaperA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQTestPaperA.h; sourceTree = "<group>"; };
@@ -449,6 +497,18 @@
 		F798E00120EF7F9500B82118 /* BridgePattern(桥接模式) */ = {
 			isa = PBXGroup;
 			children = (
+				F77187AA20F314E3009C2689 /* TFQPhone.h */,
+				F77187AB20F314E3009C2689 /* TFQPhone.m */,
+				F77187AD20F314F9009C2689 /* TFQPhoneM.h */,
+				F77187AE20F314F9009C2689 /* TFQPhoneM.m */,
+				F77187B020F31503009C2689 /* TFQPhoneN.h */,
+				F77187B120F31503009C2689 /* TFQPhoneN.m */,
+				F77187B320F31515009C2689 /* TFQPhoneGame.h */,
+				F77187B420F31515009C2689 /* TFQPhoneGame.m */,
+				F77187B620F31557009C2689 /* TFQPhoneGameA.h */,
+				F77187B720F31557009C2689 /* TFQPhoneGameA.m */,
+				F77187B920F315A0009C2689 /* TFQPhoneGameB.h */,
+				F77187BA20F315A0009C2689 /* TFQPhoneGameB.m */,
 			);
 			path = "BridgePattern(桥接模式)";
 			sourceTree = "<group>";
@@ -456,6 +516,16 @@
 		F798E00220EF7FA800B82118 /* CommandPattern(命令模式) */ = {
 			isa = PBXGroup;
 			children = (
+				F77187BC20F33FEF009C2689 /* TFQCook.h */,
+				F77187BD20F33FEF009C2689 /* TFQCook.m */,
+				F77187BF20F34080009C2689 /* TFQCommand.h */,
+				F77187C020F34080009C2689 /* TFQCommand.m */,
+				F77187C220F340A0009C2689 /* TFQChickenWing.h */,
+				F77187C320F340A0009C2689 /* TFQChickenWing.m */,
+				F77187C520F340BA009C2689 /* TFQSkewer.h */,
+				F77187C620F340BA009C2689 /* TFQSkewer.m */,
+				F77187C820F34105009C2689 /* TFQWaiter.h */,
+				F77187C920F34105009C2689 /* TFQWaiter.m */,
 			);
 			path = "CommandPattern(命令模式)";
 			sourceTree = "<group>";
@@ -463,6 +533,16 @@
 		F798E00320EF7FBE00B82118 /* ChainOfResponsibilityPattern(职责链模式) */ = {
 			isa = PBXGroup;
 			children = (
+				F77187CB20F34FCB009C2689 /* TFQRequest.h */,
+				F77187CC20F34FCB009C2689 /* TFQRequest.m */,
+				F77187CE20F34FE6009C2689 /* TFQLeader.h */,
+				F77187CF20F34FE6009C2689 /* TFQLeader.m */,
+				F77187D120F35029009C2689 /* TFQLeader1.h */,
+				F77187D220F35029009C2689 /* TFQLeader1.m */,
+				F77187D420F35039009C2689 /* TFQLeader2.h */,
+				F77187D520F35039009C2689 /* TFQLeader2.m */,
+				F77187D720F35042009C2689 /* TFQLeader3.h */,
+				F77187D820F35042009C2689 /* TFQLeader3.m */,
 			);
 			path = "ChainOfResponsibilityPattern(职责链模式)";
 			sourceTree = "<group>";
@@ -751,17 +831,25 @@
 			files = (
 				F7A6F3E920EDFDAE00615A41 /* TFQHRDepartment.m in Sources */,
 				F76953CC20EC619C0087EDE5 /* TFQObserver1.m in Sources */,
+				F77187C720F340BA009C2689 /* TFQSkewer.m in Sources */,
 				F7A8C67B20EB1EDF006EB6A9 /* TFQStraTegy.m in Sources */,
 				F7766CB320EA350100636752 /* TFQFund.m in Sources */,
 				F7AC379120E5E504000DC470 /* TFQGiftA.m in Sources */,
+				F77187C420F340A0009C2689 /* TFQChickenWing.m in Sources */,
 				F786594C20ECB5D2000817BE /* TFQEveningState.m in Sources */,
 				F7AC37AC20E623C6000DC470 /* TFQStudentFactory.m in Sources */,
+				F77187D620F35039009C2689 /* TFQLeader2.m in Sources */,
 				F7A6F3DA20EDC0A500615A41 /* TFQGamePlayer.m in Sources */,
+				F77187B520F31515009C2689 /* TFQPhoneGame.m in Sources */,
 				F7A5861020E4E62100371AD2 /* TFQShoes.m in Sources */,
 				F73A501F20AC33B8002F2599 /* ViewController.m in Sources */,
+				F77187D920F35042009C2689 /* TFQLeader3.m in Sources */,
 				F786595220ECB6ED000817BE /* TFQWork.m in Sources */,
 				F70E34D720E4C9C500E4F02B /* TFQSubtract.m in Sources */,
+				F77187AC20F314E3009C2689 /* TFQPhone.m in Sources */,
+				F77187B220F31503009C2689 /* TFQPhoneN.m in Sources */,
 				F70E34D420E4C9B700E4F02B /* TFQAdd.m in Sources */,
+				F77187D320F35029009C2689 /* TFQLeader1.m in Sources */,
 				F70E34D120E4C2E000E4F02B /* TFQOperation.m in Sources */,
 				F7766CAC20EA143100636752 /* TFQTestPaperA.m in Sources */,
 				F73A502A20AC33B8002F2599 /* main.m in Sources */,
@@ -772,7 +860,9 @@
 				F7A5860720E4E5E800371AD2 /* TFQHat.m in Sources */,
 				F786594620ECB5AA000817BE /* TFQNoonState.m in Sources */,
 				F7A6F3EC20EDFDBE00615A41 /* TFQMoneyDepartment.m in Sources */,
+				F77187AF20F314F9009C2689 /* TFQPhoneM.m in Sources */,
 				F7A6F3D720EDBAB300615A41 /* TFQTranslater.m in Sources */,
+				F77187B820F31557009C2689 /* TFQPhoneGameA.m in Sources */,
 				F70E34DD20E4C9EB00E4F02B /* TFQDivide.m in Sources */,
 				F7A5860420E4E5B200371AD2 /* TFQPerson.m in Sources */,
 				F7A6F3D420EDBAA100615A41 /* TFQNBAYaoMing.m in Sources */,
@@ -781,11 +871,15 @@
 				F7766CB620EA351200636752 /* TFQFirstFund.m in Sources */,
 				F7AC37A420E62301000DC470 /* TFQVolunteer.m in Sources */,
 				F7AC379B20E62288000DC470 /* TFQLeiFeng.m in Sources */,
+				F77187D020F34FE6009C2689 /* TFQLeader.m in Sources */,
 				F7766CAF20EA143F00636752 /* TFQTestPaperB.m in Sources */,
+				F77187CA20F34105009C2689 /* TFQWaiter.m in Sources */,
 				F7AC379420E5E50D000DC470 /* TFQGiftB.m in Sources */,
 				F7766CBE20EA3BD800636752 /* TFQBuilder.m in Sources */,
+				F77187CD20F34FCB009C2689 /* TFQRequest.m in Sources */,
 				F73A501C20AC33B8002F2599 /* AppDelegate.m in Sources */,
 				F76953CF20EC654E0087EDE5 /* TFQDataBase.m in Sources */,
+				F77187BE20F33FEF009C2689 /* TFQCook.m in Sources */,
 				F7AC379720E5E518000DC470 /* TFQGirlC.m in Sources */,
 				F7AC704720EB6E7C003C5BD8 /* TFQNotification.m in Sources */,
 				F7766CA920EA141000636752 /* TFQSuperTestPaper.m in Sources */,
@@ -797,12 +891,14 @@
 				F7A8C67E20EB1FF9006EB6A9 /* TFQBuilderA.m in Sources */,
 				F7AC37A920E623AC000DC470 /* TFQLeiFengFactory.m in Sources */,
 				F7A5860120E4E58D00371AD2 /* TFQDecorator.m in Sources */,
+				F77187BB20F315A0009C2689 /* TFQPhoneGameB.m in Sources */,
 				F7AC378E20E5E4DD000DC470 /* TFQGift.m in Sources */,
 				F76953E120EC6B200087EDE5 /* TFQDataBaseManager.m in Sources */,
 				F76953DB20EC66020087EDE5 /* TFQCRUDSqlServer.m in Sources */,
 				F7A6F3DD20EDC1E300615A41 /* TFQRecord.m in Sources */,
 				F76953D520EC65770087EDE5 /* TFQOracle.m in Sources */,
 				F786594920ECB5C5000817BE /* TFQAfternoonState.m in Sources */,
+				F77187C120F34080009C2689 /* TFQCommand.m in Sources */,
 				F76953D820EC65E80087EDE5 /* TFQCRUD.m in Sources */,
 				F76953DE20EC660F0087EDE5 /* TFQCRUDOracle.m in Sources */,
 				F786594020ECB524000817BE /* TFQState.m in Sources */,
