@@ -56,6 +56,7 @@
 #import "TFQPersonStateSuccess.h"
 #import "TFQPersonStateFail.h"
 #import "TFQObjectManager.h"
+#import "TFQMusicManager.h"
 
 @interface ViewController ()
 
@@ -137,10 +138,13 @@
  *  书中举的例子晦涩难懂，我对乐谱这种东西有一种先天的抗拒，那就只好自己写一个通俗易懂的例子
  *  来解释一下这个解释器模式。但是我从心底里感觉这个解释器模式就是对一种或者一系列行文封装成
  *  一个方法，然后调用这个方法来达到目的。类似于工作流一样的东西通过一个非常简便的操作来实现
- *  一些经常发生的操作。
+ *  一些经常发生的操作。 就像乐谱一样，你通过输入 “1234” 就可以播放dao ruai mi fa，这就是解释器
+ *  模式
  */
 - (void)interpreterPattern{
-    
+    TFQMusicManager *musicManager = [[TFQMusicManager alloc] init];
+    NSString *str = @"12343215";
+    [musicManager accept:str];
 }
 
 #pragma mark - 享元模式
