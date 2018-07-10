@@ -98,7 +98,7 @@
 //    [self chainOfResponsibilityPattern];//职责链模式
 //    [self mediatorPattern];//中介者模式
 //    [self flyweightPattern];//享元模式
-    [self interpreterPattern];//解释器模式
+//    [self interpreterPattern];//解释器模式
 //    [self visitorPattern];//访问者模式
 }
 
