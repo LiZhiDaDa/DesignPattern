@@ -12,6 +12,21 @@
 //    [self prototypePattern];//原型模式
 //    [self templateMethodPattern];//模板方法模式
 //    [self appearancePattern];//外观模式
-    [self builderPattern];//建造者模式
+//    [self builderPattern];//建造者模式
+//    [self oberverPattern];//观察者模式
+//    [self abstraceFactoryPattern];//抽象工厂模式
+//    [self statePattern];//状态模式
+//    [self adapterPattern];//适配器模式
+//    [self mementoPattern];//备忘录模式
+//    [self combinatorialPattern];//组合模式
+//    [self iteratorPattern];//迭代器模式
+//    [self sigletonPattern];//单例模式
+//    [self bridgePattern];//桥接模式
+//    [self commandPattern];//命令模式
+//    [self chainOfResponsibilityPattern];//职责链模式
+//    [self mediatorPattern];//中介者模式
+//    [self flyweightPattern];//享元模式
+//    [self interpreterPattern];//解释器模式
+//    [self visitorPattern];//访问者模式
 }
 ```
