@@ -20,7 +20,6 @@
 		F73A502A20AC33B8002F2599 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F73A502920AC33B8002F2599 /* main.m */; };
 		F73A503420AC33B9002F2599 /* DesignPatternTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F73A503320AC33B9002F2599 /* DesignPatternTests.m */; };
 		F73A503F20AC33B9002F2599 /* DesignPatternUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F73A503E20AC33B9002F2599 /* DesignPatternUITests.m */; };
-		F76953CC20EC619C0087EDE5 /* TFQObserver1.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AC704020EB6D65003C5BD8 /* TFQObserver1.m */; };
 		F76953CF20EC654E0087EDE5 /* TFQDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = F76953CE20EC654E0087EDE5 /* TFQDataBase.m */; };
 		F76953D220EC65600087EDE5 /* TFQSqlServer.m in Sources */ = {isa = PBXBuildFile; fileRef = F76953D120EC65600087EDE5 /* TFQSqlServer.m */; };
 		F76953D520EC65770087EDE5 /* TFQOracle.m in Sources */ = {isa = PBXBuildFile; fileRef = F76953D420EC65770087EDE5 /* TFQOracle.m */; };
@@ -95,6 +94,14 @@
 		F7AC37B620E635BE000DC470 /* TFQCopyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AC37B520E635BE000DC470 /* TFQCopyObject.m */; };
 		F7AC704420EB6D70003C5BD8 /* TFQObserver2.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AC704320EB6D70003C5BD8 /* TFQObserver2.m */; };
 		F7AC704720EB6E7C003C5BD8 /* TFQNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AC704620EB6E7C003C5BD8 /* TFQNotification.m */; };
+		F7B0DC0F20F4553000721621 /* TFQObserver1.m in Sources */ = {isa = PBXBuildFile; fileRef = F7AC704020EB6D65003C5BD8 /* TFQObserver1.m */; };
+		F7B0DC1420F4684400721621 /* TFQPersons.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B0DC1320F4684400721621 /* TFQPersons.m */; };
+		F7B0DC1720F4685000721621 /* TFQMan.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B0DC1620F4685000721621 /* TFQMan.m */; };
+		F7B0DC1A20F4685700721621 /* TFQWoman.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B0DC1920F4685700721621 /* TFQWoman.m */; };
+		F7B0DC2020F468A100721621 /* TFQPersonState.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B0DC1F20F468A100721621 /* TFQPersonState.m */; };
+		F7B0DC2320F468C800721621 /* TFQPersonStateSuccess.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B0DC2220F468C800721621 /* TFQPersonStateSuccess.m */; };
+		F7B0DC2620F468E000721621 /* TFQPersonStateFail.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B0DC2520F468E000721621 /* TFQPersonStateFail.m */; };
+		F7B0DC2920F4690C00721621 /* TFQObjectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F7B0DC2820F4690C00721621 /* TFQObjectManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -291,6 +298,20 @@
 		F7AC704320EB6D70003C5BD8 /* TFQObserver2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQObserver2.m; sourceTree = "<group>"; };
 		F7AC704520EB6E7C003C5BD8 /* TFQNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQNotification.h; sourceTree = "<group>"; };
 		F7AC704620EB6E7C003C5BD8 /* TFQNotification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQNotification.m; sourceTree = "<group>"; };
+		F7B0DC1220F4684400721621 /* TFQPersons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQPersons.h; sourceTree = "<group>"; };
+		F7B0DC1320F4684400721621 /* TFQPersons.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQPersons.m; sourceTree = "<group>"; };
+		F7B0DC1520F4685000721621 /* TFQMan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQMan.h; sourceTree = "<group>"; };
+		F7B0DC1620F4685000721621 /* TFQMan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQMan.m; sourceTree = "<group>"; };
+		F7B0DC1820F4685700721621 /* TFQWoman.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQWoman.h; sourceTree = "<group>"; };
+		F7B0DC1920F4685700721621 /* TFQWoman.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQWoman.m; sourceTree = "<group>"; };
+		F7B0DC1E20F468A100721621 /* TFQPersonState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQPersonState.h; sourceTree = "<group>"; };
+		F7B0DC1F20F468A100721621 /* TFQPersonState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQPersonState.m; sourceTree = "<group>"; };
+		F7B0DC2120F468C800721621 /* TFQPersonStateSuccess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQPersonStateSuccess.h; sourceTree = "<group>"; };
+		F7B0DC2220F468C800721621 /* TFQPersonStateSuccess.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQPersonStateSuccess.m; sourceTree = "<group>"; };
+		F7B0DC2420F468E000721621 /* TFQPersonStateFail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQPersonStateFail.h; sourceTree = "<group>"; };
+		F7B0DC2520F468E000721621 /* TFQPersonStateFail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQPersonStateFail.m; sourceTree = "<group>"; };
+		F7B0DC2720F4690C00721621 /* TFQObjectManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFQObjectManager.h; sourceTree = "<group>"; };
+		F7B0DC2820F4690C00721621 /* TFQObjectManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFQObjectManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -368,6 +389,8 @@
 		F73A501920AC33B8002F2599 /* DesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				F7B0DC1120F4565C00721621 /* VisitorPattern(访问者模式) */,
+				F7B0DC1020F4560B00721621 /* InterpreterPattern(解释器模式) */,
 				F798E00520EF7FF600B82118 /* FlyweightPattern(享元模式) */,
 				F798E00420EF7FDD00B82118 /* MediatorPattern(中介者模式) */,
 				F798E00320EF7FBE00B82118 /* ChainOfResponsibilityPattern(职责链模式) */,
@@ -733,6 +756,34 @@
 			path = "AbstraceFactoryPattern(抽象工厂模式)";
 			sourceTree = "<group>";
 		};
+		F7B0DC1020F4560B00721621 /* InterpreterPattern(解释器模式) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "InterpreterPattern(解释器模式)";
+			sourceTree = "<group>";
+		};
+		F7B0DC1120F4565C00721621 /* VisitorPattern(访问者模式) */ = {
+			isa = PBXGroup;
+			children = (
+				F7B0DC1220F4684400721621 /* TFQPersons.h */,
+				F7B0DC1320F4684400721621 /* TFQPersons.m */,
+				F7B0DC1520F4685000721621 /* TFQMan.h */,
+				F7B0DC1620F4685000721621 /* TFQMan.m */,
+				F7B0DC1820F4685700721621 /* TFQWoman.h */,
+				F7B0DC1920F4685700721621 /* TFQWoman.m */,
+				F7B0DC1E20F468A100721621 /* TFQPersonState.h */,
+				F7B0DC1F20F468A100721621 /* TFQPersonState.m */,
+				F7B0DC2120F468C800721621 /* TFQPersonStateSuccess.h */,
+				F7B0DC2220F468C800721621 /* TFQPersonStateSuccess.m */,
+				F7B0DC2420F468E000721621 /* TFQPersonStateFail.h */,
+				F7B0DC2520F468E000721621 /* TFQPersonStateFail.m */,
+				F7B0DC2720F4690C00721621 /* TFQObjectManager.h */,
+				F7B0DC2820F4690C00721621 /* TFQObjectManager.m */,
+			);
+			path = "VisitorPattern(访问者模式)";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -864,15 +915,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7B0DC0F20F4553000721621 /* TFQObserver1.m in Sources */,
 				F7A6F3E920EDFDAE00615A41 /* TFQHRDepartment.m in Sources */,
-				F76953CC20EC619C0087EDE5 /* TFQObserver1.m in Sources */,
 				F77187C720F340BA009C2689 /* TFQSkewer.m in Sources */,
+				F7B0DC1720F4685000721621 /* TFQMan.m in Sources */,
 				F7A8C67B20EB1EDF006EB6A9 /* TFQStraTegy.m in Sources */,
+				F7B0DC1420F4684400721621 /* TFQPersons.m in Sources */,
 				F7766CB320EA350100636752 /* TFQFund.m in Sources */,
 				F77187E220F360FB009C2689 /* TFQUSA.m in Sources */,
 				F7AC379120E5E504000DC470 /* TFQGiftA.m in Sources */,
 				F77187EE20F36E61009C2689 /* TFQWebSite.m in Sources */,
 				F77187C420F340A0009C2689 /* TFQChickenWing.m in Sources */,
+				F7B0DC2020F468A100721621 /* TFQPersonState.m in Sources */,
 				F786594C20ECB5D2000817BE /* TFQEveningState.m in Sources */,
 				F7AC37AC20E623C6000DC470 /* TFQStudentFactory.m in Sources */,
 				F77187D620F35039009C2689 /* TFQLeader2.m in Sources */,
@@ -899,6 +953,7 @@
 				F7A5860720E4E5E800371AD2 /* TFQHat.m in Sources */,
 				F786594620ECB5AA000817BE /* TFQNoonState.m in Sources */,
 				F7A6F3EC20EDFDBE00615A41 /* TFQMoneyDepartment.m in Sources */,
+				F7B0DC2320F468C800721621 /* TFQPersonStateSuccess.m in Sources */,
 				F77187DF20F360EB009C2689 /* TFQCountry.m in Sources */,
 				F77187AF20F314F9009C2689 /* TFQPhoneM.m in Sources */,
 				F7A6F3D720EDBAB300615A41 /* TFQTranslater.m in Sources */,
@@ -927,6 +982,7 @@
 				F786594F20ECB5E0000817BE /* TFQSleepState.m in Sources */,
 				F76953D220EC65600087EDE5 /* TFQSqlServer.m in Sources */,
 				F7A6F3CE20EDB83D00615A41 /* TFQNBAPlayer.m in Sources */,
+				F7B0DC2620F468E000721621 /* TFQPersonStateFail.m in Sources */,
 				F7766CBA20EA352600636752 /* TFQSecondFund.m in Sources */,
 				F7AC37A120E622DE000DC470 /* TFQStudent.m in Sources */,
 				F7A8C67E20EB1FF9006EB6A9 /* TFQBuilderA.m in Sources */,
@@ -936,8 +992,10 @@
 				F7AC378E20E5E4DD000DC470 /* TFQGift.m in Sources */,
 				F76953E120EC6B200087EDE5 /* TFQDataBaseManager.m in Sources */,
 				F76953DB20EC66020087EDE5 /* TFQCRUDSqlServer.m in Sources */,
+				F7B0DC1A20F4685700721621 /* TFQWoman.m in Sources */,
 				F7A6F3DD20EDC1E300615A41 /* TFQRecord.m in Sources */,
 				F76953D520EC65770087EDE5 /* TFQOracle.m in Sources */,
+				F7B0DC2920F4690C00721621 /* TFQObjectManager.m in Sources */,
 				F786594920ECB5C5000817BE /* TFQAfternoonState.m in Sources */,
 				F77187C120F34080009C2689 /* TFQCommand.m in Sources */,
 				F76953D820EC65E80087EDE5 /* TFQCRUD.m in Sources */,

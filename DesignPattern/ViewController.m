@@ -51,6 +51,11 @@
 #import "TFQWebSite.h"
 #import "TFQWebUser.h"
 #import "TFQWebFactory.h"
+#import "TFQMan.h"
+#import "TFQWoman.h"
+#import "TFQPersonStateSuccess.h"
+#import "TFQPersonStateFail.h"
+#import "TFQObjectManager.h"
 
 @interface ViewController ()
 
@@ -91,17 +96,59 @@
 //    [self commandPattern];//命令模式
 //    [self chainOfResponsibilityPattern];//职责链模式
 //    [self mediatorPattern];//中介者模式
-    [self flyweightPattern];//享元模式
+//    [self flyweightPattern];//享元模式
+    [self interpreterPattern];//解释器模式
+//    [self visitorPattern];//访问者模式
 }
 
+#pragma mark - 访问者模式
+/**
+ *  访问者模式：表示一个作用于某对象结构中的各元素的操作。它使你可以在不改变各元素的类的前提下
+ *  定义作用于这些元素的新操作。
+ *
+ *  书中的例子是输出了一段话，男人成功XXX，女人成功XXX，男人失败XXX,女人失败XXX，男人恋爱XXX，
+ *  女人恋爱XXX。 这个例子能用访问者模式的前提是人 只有男人跟女人两个类，用了访问者模式之后，如果
+ *  要加一个状态男人吃饭XXX，女人吃饭XXX，那么只需要增加一个吃饭的状态就可以了。否则的话需要在男人
+ *  类里增加一个吃饭状态，在女人类里增加一个吃饭状态。
+ *
+ *  此类比较复杂，我在实现的时候也是参照了UML图。
+ */
+- (void)visitorPattern{
+    TFQObjectManager *manager = [[TFQObjectManager alloc] init];
+    TFQMan *man = [[TFQMan alloc] initWithName:@"男人"];
+    TFQWoman *woman = [[TFQWoman alloc] initWithName:@"女人"];
+    [manager addPerson:man];
+    [manager addPerson:woman];
+    
+    TFQPersonStateSuccess *success = [[TFQPersonStateSuccess alloc] init];
+    success.name = @"成功";
+    TFQPersonStateFail *fail = [[TFQPersonStateFail alloc] init];
+    fail.name = @"失败";
+ 
+    [manager display:success];
+    [manager display:fail];
+}
+
+#pragma mark - 解释器模式
+/**
+ *  解释器模式：给定一个语言，定义它的文法中的一中表示，并定义一个解释器，这个解释器使用该
+ *  表示来解释语言中的句子。
+ *
+ *  书中举的例子晦涩难懂，我对乐谱这种东西有一种先天的抗拒，那就只好自己写一个通俗易懂的例子
+ *  来解释一下这个解释器模式。
+ *
+ */
+- (void)interpreterPattern{
+    
+}
 
 #pragma mark - 享元模式
 /**
  *  享元模式：运用共享技术有效地支持大量细粒度的对象。
  *
  *  书中举的例子是小菜做网站，做完之后又需要做一个大体类似的网站，直接复制过去也能实现
- *  功能，但是浪费内存浪费时间，这时候就用到了共享模式，基本上不用做修改就可以实现功能。
- *  代码中解释的很详细了。可以研读代码。
+ *  功能，但是浪费内存浪费时间，这时候就用到了共享模式，把相同的对象用同一个key，存放到字典中。
+ *  这样基本上不用创建新对象就可以实现功能。代码中解释的很详细了。可以研读代码。
  */
 - (void)flyweightPattern{
     TFQWebFactory *webFactory = [[TFQWebFactory alloc] init];
