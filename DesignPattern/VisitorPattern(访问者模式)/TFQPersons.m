@@ -1,0 +1,23 @@
+//
+//  TFQPerson.m
+//  DesignPattern
+//
+//  Created by 王立志 on 2018/7/10.
+//  Copyright © 2018年 Thread_Fight_Queue. All rights reserved.
+//
+
+#import "TFQPerson.h"
+#import "TFQPersonState.h"
+
+@implementation TFQPersons
+
+- (instancetype)initWithName:(NSString *)name{
+    if(self == [super init]){
+        self.name = name;
+    }
+    return self;
+}
+- (void)accept:(TFQPersonState *)state{
+}
+
+@end
