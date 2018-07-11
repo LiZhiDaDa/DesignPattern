@@ -878,7 +878,7 @@
 			attributes = {
 				CLASSPREFIX = TFQ;
 				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = "王立志";
+				ORGANIZATIONNAME = Thread_Fight_Queue;
 				TargetAttributes = {
 					F73A501620AC33B8002F2599 = {
 						CreatedOnToolsVersion = 9.3;
